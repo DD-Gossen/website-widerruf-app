@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EU-Widerrufsbutton für Shopify – EasyWiderruf App</title>
+  <meta name="description" content="EU-Widerrufsbutton für deinen Shopify-Shop. Rechtssicheres Widerrufsformular mit automatischen Bestätigungsmails in 24 Sprachen. DSGVO-konform, kostenlos starten.">
+  <meta name="keywords" content="EU-Widerrufsbutton, Widerrufsbutton Shopify, EU Widerrufsrecht, Widerrufsformular Shopify, Shopify Widerruf App, Widerrufsrecht Online-Shop, Widerrufsfrist 14 Tage, DSGVO Widerruf, Omnibus Richtlinie Shopify">
+  <meta name="author" content="DD-Gossen">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://dd-gossen.github.io/website-widerruf-app/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="EU-Widerrufsbutton für Shopify – EasyWiderruf App">
+  <meta property="og:description" content="EU-Widerrufsbutton für Shopify. Rechtssicheres Widerrufsformular mit Bestätigungsmails in 24 Sprachen. Kostenlos starten.">
+  <meta property="og:url" content="https://dd-gossen.github.io/website-widerruf-app/">
+  <meta property="og:image" content="https://cdn.shopify.com/app-store/listing_images/29791390a6731c220695d22200d25fb3/icon/CPfntdvhpJQDEAE=.png">
+  <meta property="og:site_name" content="EasyWiderruf">
+  <meta property="og:locale" content="de_DE">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="EU-Widerrufsbutton für Shopify – EasyWiderruf App">
+  <meta name="twitter:description" content="EU-Widerrufsbutton für Shopify. Widerrufsformular mit automatischen Bestätigungsmails in 24 Sprachen.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://cdn.shopify.com/app-store/listing_images/29791390a6731c220695d22200d25fb3/icon/CPfntdvhpJQDEAE=.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "EasyWiderruf",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "EU-Widerrufsbutton und Widerrufsformular für Shopify-Shops. Automatische Bestätigungsmails in 24 Sprachen, Shopify Returns Integration, DSGVO-konforme Datenhaltung.",
+    "url": "https://dd-gossen.github.io/website-widerruf-app/",
+    "installUrl": "https://apps.shopify.com/widerruf-app",
+    "screenshot": "https://cdn.shopify.com/app-store/listing_images/29791390a6731c220695d22200d25fb3/promotional_image/CJHy0bfppJQDEAE=.jpeg",
+    "offers": [
+      {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "name": "Free",
+        "description": "Widerrufsformular, E-Mail-Bestätigungen, 1 Sprache, Dashboard"
+      },
+      {
+        "@type": "Offer",
+        "price": "12",
+        "priceCurrency": "USD",
+        "name": "Pro",
+        "description": "24 EU-Sprachen, Custom E-Mail-Templates, eigene Absender-Domain, Shopify Returns"
+      }
+    ],
+    "author": {
+      "@type": "Organization",
+      "name": "DD-Gossen",
+      "url": "https://dd-gossen.com"
+    },
+    "datePublished": "2026-05-15",
+    "softwareVersion": "1.0"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "DD-Gossen",
+    "url": "https://dd-gossen.com",
+    "logo": "https://cdn.shopify.com/app-store/listing_images/29791390a6731c220695d22200d25fb3/icon/CPfntdvhpJQDEAE=.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Wiesbaden",
+      "addressCountry": "DE"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Brauche ich als EU-Shop einen Widerrufsbutton?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Die EU-Verbraucherrechterichtlinie verpflichtet Online-Shops, Kunden ein Widerrufsrecht von 14 Tagen einzuräumen. Ein EU-Widerrufsbutton mit Formular macht es Kunden einfach, dieses Recht wahrzunehmen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie schnell ist die Einrichtung?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Etwa zwei Minuten. Das geführte Onboarding erstellt die Widerrufsseite und platziert das Formular automatisch in deinem Shop."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Welche Sprachen werden unterstützt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Im Free-Plan Deutsch oder Englisch. Im Pro-Plan alle 24 EU-Amtssprachen, sodass dein Formular und die Bestätigungsmails automatisch in der Sprache deiner Kunden erscheinen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ist die App DSGVO-konform?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Alle Daten werden in der EU gespeichert (Frankfurt). Automatische Datenlöschung nach konfigurierbarem Zeitraum ist eingebaut. Es werden nur die für den Widerruf notwendigen Daten erhoben."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was kostet EasyWiderruf?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Der Free-Plan ist dauerhaft kostenlos und deckt die Grundfunktionen ab. Der Pro-Plan kostet $12/Monat oder $120/Jahr (17% Ersparnis) und bietet alle 24 Sprachen, Custom E-Mail-Templates und Shopify Returns Integration."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ── Reset & Base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue: #0055FF;
+      --blue-dark: #0044CC;
+      --blue-light: #E8F0FF;
+      --blue-glow: #4488FF;
+      --white: #FFFFFF;
+      --gray-50: #F8FAFC;
+      --gray-100: #F1F5F9;
+      --gray-200: #E2E8F0;
+      --gray-400: #94A3B8;
+      --gray-600: #475569;
+      --gray-800: #1E293B;
+      --gray-900: #0F172A;
+      --radius: 16px;
+      --radius-sm: 10px;
+      --shadow: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+      --shadow-lg: 0 10px 40px rgba(0,85,255,.12), 0 4px 12px rgba(0,0,0,.06);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      color: var(--gray-800);
+      line-height: 1.6;
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    img { max-width: 100%; height: auto; display: block; }
+    h1, h2, h3 { line-height: 1.2; }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ── Nav ── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255,255,255,.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--gray-200);
+      transition: box-shadow .3s;
+    }
+
+    nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.06); }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--gray-900);
+    }
+
+    .nav-logo img {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--gray-600);
+      font-size: 15px;
+      font-weight: 500;
+      transition: color .2s;
+    }
+
+    .nav-links a:hover { color: var(--blue); }
+
+    .nav-cta {
+      background: var(--blue);
+      color: var(--white) !important;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      transition: background .2s, transform .1s;
+    }
+
+    .nav-cta:hover { background: var(--blue-dark); transform: translateY(-1px); }
+
+    .nav-hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .nav-hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--gray-800);
+      margin: 5px 0;
+      border-radius: 2px;
+      transition: .3s;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      padding: 140px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -200px;
+      right: -200px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(0,85,255,.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--blue-light);
+      color: var(--blue);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 4.5vw, 52px);
+      font-weight: 800;
+      color: var(--gray-900);
+      margin-bottom: 20px;
+      letter-spacing: -0.02em;
+    }
+
+    .hero h1 span { color: var(--blue); }
+
+    .hero p {
+      font-size: 18px;
+      color: var(--gray-600);
+      margin-bottom: 32px;
+      max-width: 480px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .2s;
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--blue);
+      color: var(--white);
+      box-shadow: 0 4px 14px rgba(0,85,255,.3);
+    }
+
+    .btn-primary:hover {
+      background: var(--blue-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,85,255,.35);
+    }
+
+    .btn-secondary {
+      background: var(--white);
+      color: var(--gray-800);
+      border: 1.5px solid var(--gray-200);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--blue);
+      color: var(--blue);
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-mockup {
+      background: var(--gray-50);
+      border-radius: var(--radius);
+      border: 1px solid var(--gray-200);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .mockup-bar {
+      display: flex;
+      gap: 6px;
+      padding: 12px 16px;
+      background: var(--white);
+      border-bottom: 1px solid var(--gray-200);
+    }
+
+    .mockup-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--gray-200);
+    }
+
+    .mockup-body { padding: 32px; }
+
+    .mockup-form {
+      max-width: 360px;
+      margin: 0 auto;
+    }
+
+    .mockup-step {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+    }
+
+    .mockup-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 4px;
+    }
+
+    .mockup-sub {
+      font-size: 13px;
+      color: var(--gray-400);
+      margin-bottom: 20px;
+    }
+
+    .mockup-input {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1.5px solid var(--gray-200);
+      border-radius: 8px;
+      font-size: 14px;
+      color: var(--gray-400);
+      background: var(--white);
+      margin-bottom: 10px;
+    }
+
+    .mockup-btn {
+      width: 100%;
+      padding: 10px;
+      background: var(--blue);
+      color: var(--white);
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 6px;
+    }
+
+    .hero-stat {
+      position: absolute;
+      background: var(--white);
+      border-radius: var(--radius-sm);
+      padding: 12px 16px;
+      box-shadow: var(--shadow-lg);
+      font-size: 13px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .hero-stat.s1 { top: 20px; right: -20px; animation-delay: 0s; }
+    .hero-stat.s2 { bottom: 30px; left: -20px; animation-delay: 1.5s; }
+
+    .stat-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+    }
+
+    .stat-icon.green { background: #ECFDF5; color: #10B981; }
+    .stat-icon.orange { background: #FFF7ED; color: #F59E0B; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    /* ── Logos / Trust ── */
+    .trust {
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .trust-text {
+      font-size: 13px;
+      color: var(--gray-400);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .trust-badges {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--gray-400);
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .trust-badge svg { opacity: .5; }
+
+    /* ── Features ── */
+    .features {
+      padding: 80px 0;
+    }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: clamp(28px, 3.5vw, 40px);
+      font-weight: 800;
+      color: var(--gray-900);
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .section-desc {
+      font-size: 17px;
+      color: var(--gray-600);
+      max-width: 560px;
+      margin-bottom: 48px;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .feature-card {
+      padding: 28px;
+      border-radius: var(--radius);
+      border: 1px solid var(--gray-200);
+      transition: all .25s;
+      background: var(--white);
+    }
+
+    .feature-card:hover {
+      border-color: var(--blue);
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+    }
+
+    .feature-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: var(--blue-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      color: var(--blue);
+    }
+
+    .feature-card h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 8px;
+    }
+
+    .feature-card p {
+      font-size: 14px;
+      color: var(--gray-600);
+      line-height: 1.6;
+    }
+
+    /* ── How It Works ── */
+    .how {
+      padding: 80px 0;
+      background: var(--gray-50);
+    }
+
+    .how .container { text-align: center; }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      margin-top: 48px;
+      text-align: center;
+    }
+
+    .step-num {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--blue);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 800;
+      margin: 0 auto 16px;
+    }
+
+    .step h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      font-size: 14px;
+      color: var(--gray-600);
+      max-width: 280px;
+      margin: 0 auto;
+    }
+
+    /* ── Pricing ── */
+    .pricing {
+      padding: 80px 0;
+    }
+
+    .pricing .container { text-align: center; }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      max-width: 760px;
+      margin: 48px auto 0;
+      text-align: left;
+    }
+
+    .price-card {
+      padding: 32px;
+      border-radius: var(--radius);
+      border: 1.5px solid var(--gray-200);
+      background: var(--white);
+      position: relative;
+    }
+
+    .price-card.featured {
+      border-color: var(--blue);
+      box-shadow: 0 8px 30px rgba(0,85,255,.12);
+    }
+
+    .price-badge {
+      position: absolute;
+      top: -12px;
+      left: 24px;
+      background: var(--blue);
+      color: var(--white);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+
+    .price-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--gray-400);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+
+    .price-amount {
+      font-size: 42px;
+      font-weight: 800;
+      color: var(--gray-900);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .price-amount span {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--gray-400);
+    }
+
+    .price-sub {
+      font-size: 13px;
+      color: var(--gray-400);
+      margin-bottom: 24px;
+    }
+
+    .price-features {
+      list-style: none;
+      margin-bottom: 24px;
+    }
+
+    .price-features li {
+      padding: 6px 0;
+      font-size: 14px;
+      color: var(--gray-600);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .price-features li::before {
+      content: '';
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #ECFDF5;
+      flex-shrink: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2310B981' stroke-width='3'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .price-card .btn { width: 100%; justify-content: center; }
+
+    /* ── FAQ ── */
+    .faq {
+      padding: 80px 0;
+      background: var(--gray-50);
+    }
+
+    .faq .container { text-align: center; }
+
+    .faq-list {
+      max-width: 680px;
+      margin: 48px auto 0;
+      text-align: left;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--gray-200);
+    }
+
+    .faq-q {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 20px 0;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--gray-900);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      font-family: inherit;
+    }
+
+    .faq-q::after {
+      content: '+';
+      font-size: 22px;
+      font-weight: 300;
+      color: var(--gray-400);
+      transition: transform .2s;
+      flex-shrink: 0;
+      margin-left: 16px;
+    }
+
+    .faq-item.open .faq-q::after {
+      content: '−';
+      color: var(--blue);
+    }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .3s ease;
+    }
+
+    .faq-item.open .faq-a { max-height: 200px; }
+
+    .faq-a p {
+      padding-bottom: 20px;
+      font-size: 15px;
+      color: var(--gray-600);
+      line-height: 1.7;
+    }
+
+    /* ── CTA ── */
+    .cta {
+      padding: 80px 0;
+    }
+
+    .cta-box {
+      background: var(--blue);
+      border-radius: 24px;
+      padding: 64px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-box::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      left: -100px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(255,255,255,.08) 0%, transparent 70%);
+    }
+
+    .cta-box::after {
+      content: '';
+      position: absolute;
+      bottom: -80px;
+      right: -80px;
+      width: 250px;
+      height: 250px;
+      background: radial-gradient(circle, rgba(255,255,255,.06) 0%, transparent 70%);
+    }
+
+    .cta-box h2 {
+      font-size: clamp(26px, 3vw, 36px);
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-box p {
+      font-size: 17px;
+      color: rgba(255,255,255,.8);
+      margin-bottom: 32px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .btn-white {
+      background: var(--white);
+      color: var(--blue);
+      padding: 14px 32px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all .2s;
+      position: relative;
+      z-index: 1;
+    }
+
+    .btn-white:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    }
+
+    /* ── Footer ── */
+    footer {
+      padding: 40px 0;
+      border-top: 1px solid var(--gray-200);
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-left {
+      font-size: 14px;
+      color: var(--gray-400);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .footer-links a {
+      font-size: 14px;
+      color: var(--gray-400);
+      transition: color .2s;
+    }
+
+    .footer-links a:hover { color: var(--blue); }
+
+    /* ── Mobile ── */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-hamburger { display: block; }
+
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        padding: 20px 24px;
+        border-bottom: 1px solid var(--gray-200);
+        gap: 16px;
+        box-shadow: 0 8px 20px rgba(0,0,0,.06);
+      }
+
+      .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+      .hero-visual { order: -1; }
+      .hero-stat { display: none; }
+      .features-grid { grid-template-columns: 1fr; }
+      .steps { grid-template-columns: 1fr; gap: 32px; }
+      .pricing-grid { grid-template-columns: 1fr; }
+      .cta-box { padding: 48px 24px; }
+
+      .footer-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .features-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="https://cdn.shopify.com/app-store/listing_images/29791390a6731c220695d22200d25fb3/icon/CPfntdvhpJQDEAE=.png" alt="EasyWiderruf Logo" width="36" height="36">
+        EasyWiderruf
+      </a>
+      <button class="nav-hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how">So geht's</a></li>
+        <li><a href="#pricing">Preise</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="https://apps.shopify.com/widerruf-app" class="nav-cta" target="_blank" rel="noopener">Installieren</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Shopify App Store
+          </div>
+          <h1>EU-Widerrufsbutton<br>für deinen <span>Shopify-Shop</span></h1>
+          <p>Rechtssicherer EU-Widerrufsbutton mit Formular und automatischen Bestätigungsmails in 24 Sprachen. Einrichtung in unter zwei Minuten.</p>
+          <div class="hero-actions">
+            <a href="https://apps.shopify.com/widerruf-app" class="btn btn-primary" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+              Kostenlos installieren
+            </a>
+            <a href="#features" class="btn btn-secondary">Mehr erfahren</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-mockup">
+            <div class="mockup-bar">
+              <div class="mockup-dot"></div>
+              <div class="mockup-dot"></div>
+              <div class="mockup-dot"></div>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-form">
+                <div class="mockup-step">Schritt 1 von 2</div>
+                <div class="mockup-title">Widerruf einreichen</div>
+                <div class="mockup-sub">Bitte gib deine Kontaktdaten und Bestellnummer an.</div>
+                <div class="mockup-input">Max Mustermann</div>
+                <div class="mockup-input">max@beispiel.de</div>
+                <div class="mockup-input">#12345</div>
+                <div class="mockup-btn">Weiter</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-stat s1">
+            <div class="stat-icon green">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
+            <div>
+              <div style="color:var(--gray-900)">Bestätigt</div>
+              <div style="font-size:11px;color:var(--gray-400);font-weight:400">E-Mail gesendet</div>
+            </div>
+          </div>
+          <div class="hero-stat s2">
+            <div class="stat-icon orange">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div>
+              <div style="color:var(--gray-900)">14 Tage</div>
+              <div style="font-size:11px;color:var(--gray-400);font-weight:400">EU-Widerrufsfrist</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust -->
+  <section class="trust">
+    <div class="container">
+      <div class="trust-badges">
+        <div class="trust-badge">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          DSGVO-konform
+        </div>
+        <div class="trust-badge">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          24 EU-Sprachen
+        </div>
+        <div class="trust-badge">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          Hosting in Frankfurt
+        </div>
+        <div class="trust-badge">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          Shopify Returns
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-label">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        Features
+      </div>
+      <h2 class="section-title">Alles, was dein EU-Widerrufsbutton braucht</h2>
+      <p class="section-desc">Vom Widerrufsbutton über das Formular bis zur automatischen Bestätigungs-E-Mail. Rechtssicher und einfach zu bedienen.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8M16 17H8M10 9H8"/></svg>
+          </div>
+          <h3>Widerrufsbutton &amp; Formular</h3>
+          <p>EU-Widerrufsbutton mit einbettbarem Formular direkt auf deiner Shopify-Seite. Kunden geben Name, E-Mail und Bestellnummer ein und schicken den Widerruf ab.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+          </div>
+          <h3>Automatische E-Mails</h3>
+          <p>Sofortige Bestätigungsmail mit Zeitstempel an den Kunden. Anpassbare Templates pro Sprache. Optional mit eigener Absender-Domain.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>24 EU-Sprachen</h3>
+          <p>Formular und E-Mails in allen EU-Amtssprachen. Von Deutsch und Englisch bis Schwedisch und Polnisch. Automatisch passend zur Shop-Sprache.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3>Dashboard</h3>
+          <p>Alle Widerrufe im Blick. Status-Tracking, Bestellnummer, Zeitstempel, Gründe. Filtere nach Status und exportiere bei Bedarf.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>DSGVO-konform</h3>
+          <p>Daten werden in Frankfurt (EU) gespeichert. Konfigurierbare automatische Löschung. Nur die nötigsten Daten werden erhoben.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Shopify Returns</h3>
+          <p>Im Pro-Plan werden Widerrufe automatisch als Shopify Returns angelegt. Spart manuelle Arbeit und hält alles im Shopify-Ökosystem.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how" id="how">
+    <div class="container">
+      <div class="section-label">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+        So geht's
+      </div>
+      <h2 class="section-title">In zwei Minuten startklar</h2>
+      <p class="section-desc" style="margin: 0 auto 0;">Installieren, Onboarding durchlaufen, fertig. Kein Code nötig.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>App installieren</h3>
+          <p>Ein Klick im Shopify App Store. Die App fügt sich nahtlos in deinen Admin-Bereich ein.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Onboarding starten</h3>
+          <p>Sprache wählen, E-Mail-Einstellungen prüfen. Das Formular wird automatisch als Seite in deinem Shop erstellt.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Widerrufe empfangen</h3>
+          <p>Kunden können sofort widerrufen. Du siehst alles im Dashboard und die Bestätigungsmail geht automatisch raus.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-label">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        Preise
+      </div>
+      <h2 class="section-title">Starte kostenlos, wachse mit Pro</h2>
+      <p class="section-desc" style="margin: 0 auto 0;">Der Free-Plan deckt die gesetzlichen Grundlagen ab. Pro gibt dir alle Werkzeuge für einen professionellen Auftritt.</p>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="price-name">Free</div>
+          <div class="price-amount">$0 <span>/ Monat</span></div>
+          <div class="price-sub">Dauerhaft kostenlos</div>
+          <ul class="price-features">
+            <li>EU-Widerrufsbutton &amp; Formular</li>
+            <li>Bestätigungsmails</li>
+            <li>1 Sprache (DE oder EN)</li>
+            <li>Dashboard mit Status-Tracking</li>
+            <li>Bestellnummer-Prüfung</li>
+            <li>DSGVO-konform</li>
+          </ul>
+          <a href="https://apps.shopify.com/widerruf-app" class="btn btn-secondary" target="_blank" rel="noopener">Kostenlos starten</a>
+        </div>
+        <div class="price-card featured">
+          <div class="price-badge">Beliebt</div>
+          <div class="price-name">Pro</div>
+          <div class="price-amount">$12 <span>/ Monat</span></div>
+          <div class="price-sub">oder $120/Jahr (spare 17%) · 14 Tage kostenlos testen</div>
+          <ul class="price-features">
+            <li>Alle 24 EU-Sprachen</li>
+            <li>Custom E-Mail-Templates</li>
+            <li>Eigene Absender-Domain</li>
+            <li>Automatische Shopify Returns</li>
+            <li>Fristüberwachung</li>
+            <li>Kein Branding</li>
+            <li>Custom Formular-Design</li>
+          </ul>
+          <a href="https://apps.shopify.com/widerruf-app" class="btn btn-primary" target="_blank" rel="noopener">14 Tage kostenlos testen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-label">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+        FAQ
+      </div>
+      <h2 class="section-title">Häufige Fragen</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Brauche ich als EU-Shop einen Widerrufsbutton?</button>
+          <div class="faq-a"><p>Ja. Die EU-Verbraucherrechterichtlinie gibt Kunden ein 14-tägiges Widerrufsrecht. Ein EU-Widerrufsbutton mit Formular macht es Kunden einfach, dieses Recht wahrzunehmen, und dir den Eingang rechtssicher zu dokumentieren.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Wie schnell ist die Einrichtung?</button>
+          <div class="faq-a"><p>Etwa zwei Minuten. Das geführte Onboarding erstellt die Widerrufsseite und platziert das Formular automatisch. Du musst keinen Code anfassen.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Welche Sprachen werden unterstützt?</button>
+          <div class="faq-a"><p>Im Free-Plan Deutsch oder Englisch. Im Pro-Plan alle 24 EU-Amtssprachen. Formular und Bestätigungsmails passen sich automatisch an die Kundensprache an.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Ist die App DSGVO-konform?</button>
+          <div class="faq-a"><p>Ja. Alle Daten werden in der EU (Frankfurt) gespeichert. Automatische Datenlöschung nach konfigurierbarem Zeitraum ist eingebaut. Es werden nur die nötigsten Daten erhoben.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Was kostet die App?</button>
+          <div class="faq-a"><p>Der Free-Plan ist dauerhaft kostenlos. Der Pro-Plan kostet $12/Monat oder $120/Jahr (17% Ersparnis) und bietet 24 Sprachen, Custom Templates, eigene Domain und Shopify Returns.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-box">
+        <h2>EU-Widerrufsbutton. Fertig eingerichtet.</h2>
+        <p>Installiere EasyWiderruf und mach deinen Shop EU-konform. Kostenlos, in unter zwei Minuten.</p>
+        <a href="https://apps.shopify.com/widerruf-app" class="btn-white" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+          Im Shopify App Store installieren
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">&copy; 2026 DD-Gossen · Wiesbaden, Deutschland</div>
+        <ul class="footer-links">
+          <li><a href="https://dd-gossen.com" target="_blank" rel="noopener">DD-Gossen</a></li>
+          <li><a href="https://widerruf-app.fly.dev/privacy" target="_blank" rel="noopener">Datenschutz</a></li>
+          <li><a href="https://apps.shopify.com/widerruf-app" target="_blank" rel="noopener">App Store</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Nav scroll effect
+    window.addEventListener('scroll', () => {
+      document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Close mobile nav on link click
+    document.querySelectorAll('#navLinks a').forEach(a => {
+      a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+    });
+  </script>
+</body>
+</html>
