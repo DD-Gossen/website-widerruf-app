@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auftragsverarbeitungsvertrag (AVV) · EasyWiderruf</title>
+  <meta name="description" content="Auftragsverarbeitungsvertrag (AVV) gemäß Art. 28 Abs. 3 DSGVO für EasyWiderruf. Informationen zu Datenverarbeitung, Speicherort, Unterauftragsverarbeitern und Ihren Rechten.">
+  <meta name="author" content="DD-Gossen">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://widerruf.app/avv.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Auftragsverarbeitungsvertrag (AVV) · EasyWiderruf">
+  <meta property="og:description" content="AVV gemäß Art. 28 DSGVO für die EasyWiderruf Shopify App. Datenverarbeitung, Speicherort und Ihre Rechte.">
+  <meta property="og:url" content="https://widerruf.app/avv.html">
+  <meta property="og:image" content="https://cdn.shopify.com/app-store/listing_images/29791390a6731c220695d22200d25fb3/icon/CPfntdvhpJQDEAE=.png">
+  <meta property="og:locale" content="de_DE">
+
+  <link rel="icon" type="image/png" href="https://cdn.shopify.com/app-store/listing_images/29791390a6731c220695d22200d25fb3/icon/CPfntdvhpJQDEAE=.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Muss ich den AVV separat unterschreiben?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nein. Der AVV tritt mit Installation der App in Kraft. Dies entspricht Art. 28 Abs. 3 DSGVO, der die elektronische Form zulässt."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Wer ist Verantwortlicher, wer ist Auftragsverarbeiter?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sie (der Händler) sind Verantwortlicher für die personenbezogenen Daten Ihrer Endkunden. Wir (DD-Gossen als App-Anbieter) handeln als Auftragsverarbeiter in Ihrem Auftrag."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Wie lange speichern wir Widerrufsdaten?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Free Plan: Widerrufsdaten werden nach 90 Tagen automatisch gelöscht. Pro Plan: Sie können die Aufbewahrungsfrist in der App konfigurieren."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Was passiert mit den Daten bei Deinstallation?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Bei Deinstallation werden alle in Ihrem Auftrag verarbeiteten Widerrufsdaten sofort gelöscht. Sie können vorher einen CSV-Export über das Dashboard durchführen."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Wie werde ich über Änderungen bei Unterauftragsverarbeitern informiert?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Wir informieren Sie mindestens 14 Tage im Voraus per E-Mail oder In-App-Benachrichtigung."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Gilt der AVV für alle EU-Mitgliedstaaten?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja. Der AVV basiert auf Art. 28 DSGVO, der einheitlich in der gesamten EU/EWR gilt. Der AVV unterliegt deutschem Recht."
+            }
+        }
+    ]
+}
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "EasyWiderruf",
+            "item": "https://widerruf.app/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Auftragsverarbeitung (AVV)",
+            "item": "https://widerruf.app/avv.html"
+        }
+    ]
+}
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue: #0055FF;
+      --blue-dark: #0044CC;
+      --blue-light: #E8F0FF;
+      --white: #FFFFFF;
+      --gray-50: #F8FAFC;
+      --gray-100: #F1F5F9;
+      --gray-200: #E2E8F0;
+      --gray-400: #94A3B8;
+      --gray-600: #475569;
+      --gray-800: #1E293B;
+      --gray-900: #0F172A;
+      --radius: 16px;
+      --radius-sm: 10px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      color: var(--gray-800);
+      line-height: 1.7;
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { max-width: 100%; height: auto; display: block; }
+
+    /* Nav */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(255,255,255,.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--gray-200);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--gray-900);
+      text-decoration: none;
+    }
+
+    .nav-logo img { width: 36px; height: 36px; border-radius: 8px; }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--gray-600);
+      font-size: 15px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover { color: var(--blue); }
+
+    .nav-cta {
+      background: var(--blue);
+      color: var(--white) !important;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: none !important;
+      transition: background .2s;
+    }
+
+    .nav-cta:hover { background: var(--blue-dark); }
+
+    .nav-hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .nav-hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--gray-800);
+      margin: 5px 0;
+      border-radius: 2px;
+    }
+
+    /* Article Layout */
+    .article-header {
+      padding: 120px 24px 48px;
+      text-align: center;
+      background: var(--gray-50);
+      border-bottom: 1px solid var(--gray-200);
+    }
+
+    .article-header .breadcrumb {
+      font-size: 13px;
+      color: var(--gray-400);
+      margin-bottom: 20px;
+    }
+
+    .article-header .breadcrumb a { color: var(--blue); text-decoration: none; }
+
+    .article-header h1 {
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 800;
+      color: var(--gray-900);
+      max-width: 760px;
+      margin: 0 auto 16px;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+
+    .article-header .subtitle {
+      font-size: 18px;
+      color: var(--gray-600);
+      max-width: 600px;
+      margin: 0 auto 20px;
+    }
+
+    .article-meta { font-size: 13px; color: var(--gray-400); }
+
+    .article-body {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .article-body h2 {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--gray-900);
+      margin: 48px 0 16px;
+      letter-spacing: -0.01em;
+    }
+
+    .article-body h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin: 32px 0 12px;
+    }
+
+    .article-body p {
+      font-size: 16.5px;
+      color: var(--gray-800);
+      margin-bottom: 20px;
+      line-height: 1.8;
+    }
+
+    .article-body ul, .article-body ol {
+      margin: 0 0 20px 24px;
+      font-size: 16.5px;
+      color: var(--gray-800);
+    }
+
+    .article-body li { margin-bottom: 8px; line-height: 1.7; }
+
+    .info-box {
+      background: var(--blue-light);
+      border-left: 4px solid var(--blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 20px 24px;
+      margin: 28px 0;
+    }
+
+    .info-box p { margin-bottom: 0; color: var(--gray-800); }
+    .info-box strong { color: var(--blue); }
+
+    .checklist { list-style: none; margin: 20px 0; padding: 0; }
+
+    .checklist li {
+      padding: 8px 0 8px 32px;
+      position: relative;
+      font-size: 16px;
+      color: var(--gray-800);
+    }
+
+    .checklist li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 11px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #ECFDF5 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2310B981' stroke-width='3'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E") no-repeat center;
+    }
+
+    .data-location {
+      background: var(--gray-50);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-sm);
+      padding: 24px 28px;
+      margin: 24px 0;
+    }
+
+    .data-location ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .data-location li {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--gray-200);
+      font-size: 16px;
+      color: var(--gray-800);
+      display: flex;
+      gap: 12px;
+      align-items: baseline;
+    }
+
+    .data-location li:last-child { border-bottom: none; }
+
+    .data-location .label {
+      font-weight: 700;
+      color: var(--gray-900);
+      min-width: 160px;
+      flex-shrink: 0;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      transition: all .2s;
+      text-decoration: none !important;
+    }
+
+    .btn-primary {
+      background: var(--blue);
+      color: var(--white) !important;
+      box-shadow: 0 4px 14px rgba(0,85,255,.25);
+    }
+
+    .btn-primary:hover {
+      background: var(--blue-dark);
+      transform: translateY(-2px);
+    }
+
+    .cta-bottom {
+      background: var(--blue);
+      border-radius: 24px;
+      padding: 56px 40px;
+      text-align: center;
+      margin: 48px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-bottom::before {
+      content: '';
+      position: absolute;
+      top: -80px; left: -80px;
+      width: 250px; height: 250px;
+      background: radial-gradient(circle, rgba(255,255,255,.08) 0%, transparent 70%);
+    }
+
+    .cta-bottom h2 {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--white);
+      margin: 0 0 12px;
+      position: relative;
+    }
+
+    .cta-bottom p {
+      font-size: 16px;
+      color: rgba(255,255,255,.8);
+      margin-bottom: 24px;
+      position: relative;
+    }
+
+    .btn-white {
+      background: var(--white);
+      color: var(--blue) !important;
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all .2s;
+      position: relative;
+      text-decoration: none !important;
+    }
+
+    .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,.15); }
+
+    footer {
+      padding: 32px 24px;
+      border-top: 1px solid var(--gray-200);
+      text-align: center;
+    }
+
+    .footer-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-inner a { color: var(--gray-400); font-size: 14px; text-decoration: none; }
+    .footer-inner a:hover { color: var(--blue); }
+    .footer-left { font-size: 14px; color: var(--gray-400); }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-hamburger { display: block; }
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 64px;
+        left: 0; right: 0;
+        background: var(--white);
+        padding: 16px 24px;
+        border-bottom: 1px solid var(--gray-200);
+        box-shadow: 0 8px 24px rgba(0,0,0,.08);
+        gap: 0;
+      }
+      .nav-links.open li { padding: 12px 0; border-bottom: 1px solid var(--gray-100); }
+      .nav-links.open li:last-child { border-bottom: none; padding-top: 16px; }
+      .data-location li { flex-direction: column; gap: 2px; }
+      .data-location .label { min-width: auto; }
+    }
+
+    @media (max-width: 640px) {
+      .article-body { padding: 32px 20px 60px; }
+      .cta-bottom { padding: 40px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="./" class="nav-logo">
+        <img src="https://cdn.shopify.com/app-store/listing_images/29791390a6731c220695d22200d25fb3/icon/CPfntdvhpJQDEAE=.png" alt="EasyWiderruf" width="36" height="36">
+        EasyWiderruf
+      </a>
+      <button class="nav-hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="./#features">Features</a></li>
+        <li><a href="./#how">So geht's</a></li>
+        <li><a href="./#pricing">Preise</a></li>
+        <li><a href="./#faq">FAQ</a></li>
+        <li><a href="eu-widerrufsrecht-shopify.html">Ratgeber</a></li>
+        <li><a href="https://apps.shopify.com/widerruf-app" class="nav-cta" target="_blank" rel="noopener">Installieren</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="article-header">
+    <div class="breadcrumb">
+      <a href="./">EasyWiderruf</a> &rsaquo; Auftragsverarbeitung (AVV)
+    </div>
+    <h1>Auftragsverarbeitungsvertrag (AVV)</h1>
+    <p class="subtitle">Gemäß Art. 28 Abs. 3 DSGVO &middot; EasyWiderruf &middot; Version: Juni 2026</p>
+    <div class="article-meta">Aktualisiert: Juni 2026 &middot; Von DD-Gossen</div>
+  </header>
+
+  <article class="article-body">
+
+    <h2 id="ueberblick">Überblick</h2>
+
+    <p>Wenn Händler EasyWiderruf nutzen, verarbeiten wir personenbezogene Daten ihrer Endkunden (Verbraucher, die einen Widerruf einreichen) in deren Auftrag. Nach der Datenschutz-Grundverordnung (DSGVO) erfordert dies einen Auftragsverarbeitungsvertrag (AVV).</p>
+
+    <p>Dieser AVV tritt mit der Installation der App in Kraft. Eine gesonderte Unterschrift ist nicht erforderlich. Art. 28 Abs. 3 DSGVO erlaubt ausdrücklich die elektronische Form.</p>
+
+    <div class="info-box">
+      <p><strong>Wichtig:</strong> Als Händler sind Sie der Verantwortliche im Sinne der DSGVO. DD-Gossen (Anbieter von EasyWiderruf) handelt ausschließlich als Auftragsverarbeiter in Ihrem Auftrag und nach Ihren Weisungen.</p>
+    </div>
+
+    <h2 id="was-der-avv-regelt">Was der AVV regelt</h2>
+
+    <ul class="checklist">
+      <li>Gegenstand und Dauer der Verarbeitung (gebunden an die Nutzung der App)</li>
+      <li>Arten der verarbeiteten personenbezogenen Daten (Name, E-Mail, Bestellnummer, Zeitstempel, Status)</li>
+      <li>Ihr Weisungsrecht bezüglich der Datenverarbeitung</li>
+      <li>Unsere technischen und organisatorischen Sicherheitsmaßnahmen (Verschlüsselung, Zugriffskontrollen, Mandantentrennung)</li>
+      <li>Genehmigte Unterauftragsverarbeiter und Benachrichtigung bei Änderungen</li>
+      <li>Unterstützung bei Betroffenenrechten (Art. 15 bis 22 DSGVO)</li>
+      <li>Meldeverfahren bei Datenschutzverletzungen</li>
+      <li>Datenspeicherung: Standardmäßig 90 Tage im Free Plan; konfigurierbare Zeiträume im Pro Plan</li>
+      <li>Datenlöschung bei Kündigung (sofortige Löschung der Widerrufsdaten bei Deinstallation)</li>
+      <li>Prüf- und Rechenschaftsrechte</li>
+    </ul>
+
+    <h2 id="datenspeicherung">Wo werden Ihre Daten gespeichert?</h2>
+
+    <p>Alle primären Datenverarbeitungsprozesse finden innerhalb der Europäischen Union statt.</p>
+
+    <div class="data-location">
+      <ul>
+        <li>
+          <span class="label">Datenbank</span>
+          <span>SQLite auf Fly.io Volume, Frankfurt, Deutschland</span>
+        </li>
+        <li>
+          <span class="label">Anwendungsserver</span>
+          <span>Fly.io, Frankfurt (DE)</span>
+        </li>
+        <li>
+          <span class="label">E-Mail-Versand</span>
+          <span>Resend, Irland (eu-west-1)</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="info-box">
+      <p><strong>EU-Hosting:</strong> Sowohl die Datenbank als auch der Anwendungsserver befinden sich in Frankfurt, Deutschland. Der E-Mail-Dienst wird in Irland betrieben. Eine Übermittlung in Drittländer findet nicht statt.</p>
+    </div>
+
+    <h2 id="faq">Häufige Fragen</h2>
+
+    <h3>Muss ich den AVV separat unterschreiben?</h3>
+    <p>Nein. Der AVV tritt mit Installation der App in Kraft. Dies entspricht Art. 28 Abs. 3 DSGVO, der die elektronische Form zulässt.</p>
+
+    <h3>Wer ist Verantwortlicher, wer ist Auftragsverarbeiter?</h3>
+    <p>Sie (der Händler) sind Verantwortlicher für die personenbezogenen Daten Ihrer Endkunden. Wir (DD-Gossen als App-Anbieter) handeln als Auftragsverarbeiter in Ihrem Auftrag.</p>
+
+    <h3>Wie lange speichern wir Widerrufsdaten?</h3>
+    <p>Free Plan: Widerrufsdaten werden nach 90 Tagen automatisch gelöscht. Pro Plan: Sie können die Aufbewahrungsfrist in der App konfigurieren.</p>
+
+    <h3>Was passiert mit den Daten bei Deinstallation?</h3>
+    <p>Bei Deinstallation werden alle in Ihrem Auftrag verarbeiteten Widerrufsdaten sofort gelöscht. Sie können vorher einen CSV-Export über das Dashboard durchführen.</p>
+
+    <h3>Wie werde ich über Änderungen bei Unterauftragsverarbeitern informiert?</h3>
+    <p>Wir informieren Sie mindestens 14 Tage im Voraus per E-Mail oder In-App-Benachrichtigung.</p>
+
+    <h3>Gilt der AVV für alle EU-Mitgliedstaaten?</h3>
+    <p>Ja. Der AVV basiert auf Art. 28 DSGVO, der einheitlich in der gesamten EU/EWR gilt. Der AVV unterliegt deutschem Recht.</p>
+
+    <div class="cta-bottom">
+      <h2>Fragen zum AVV?</h2>
+      <p>Bei Fragen zum Datenschutz oder zur Auftragsverarbeitung kontaktieren Sie uns.</p>
+      <a href="mailto:info@dd-gossen.com" class="btn-white">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+        Kontakt aufnehmen
+      </a>
+    </div>
+
+    <p style="font-size:13px;color:var(--gray-400);margin-top:32px;"><em>Dieses Dokument dient der Transparenz gegenüber Händlern, die EasyWiderruf nutzen. Bei konkreten rechtlichen Fragen wenden Sie sich bitte an einen Rechtsanwalt. Stand: Juni 2026.</em></p>
+
+  </article>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">&copy; 2026 DD-Gossen &middot; Wiesbaden</div>
+      <div>
+        <a href="./">Startseite</a> &nbsp;&middot;&nbsp;
+        <a href="https://dd-gossen.com" target="_blank" rel="noopener">DD-Gossen</a> &nbsp;&middot;&nbsp;
+        <a href="https://widerruf-app.fly.dev/privacy" target="_blank" rel="noopener">Datenschutz</a> &nbsp;&middot;&nbsp;
+        <a href="impressum.html">Impressum</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Nav scroll effect
+    window.addEventListener('scroll', function() {
+      document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 20);
+    });
+  </script>
+
+</body>
+</html>
