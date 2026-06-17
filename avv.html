@@ -464,40 +464,67 @@
       .cta-bottom { padding: 40px 24px; }
     }
 
-    /* Language Toggle */
-    .lang-toggle {
-      display: flex;
-      align-items: center;
-      gap: 2px;
-      margin-left: 8px;
+
+    /* ── Language Switcher ── */
+    .lang-switcher {
+      position: relative;
     }
 
-    .lang-toggle a {
+    .lang-btn {
       display: flex;
       align-items: center;
-      gap: 4px;
-      padding: 5px 10px;
+      gap: 6px;
+      background: none;
+      border: 1.5px solid var(--gray-200);
+      border-radius: 8px;
+      padding: 6px 12px;
       font-size: 13px;
       font-weight: 600;
-      color: var(--gray-400);
-      text-decoration: none;
+      color: var(--gray-600);
+      cursor: pointer;
+      font-family: inherit;
+      transition: border-color .2s, color .2s;
+    }
+
+    .lang-btn:hover { border-color: var(--blue); color: var(--blue); }
+
+    .lang-btn svg { flex-shrink: 0; }
+
+    .lang-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 8px);
+      right: 0;
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: 12px;
+      box-shadow: 0 12px 40px rgba(0,0,0,.12);
+      padding: 8px;
+      z-index: 200;
+      width: 200px;
+      max-height: 360px;
+      overflow-y: auto;
+    }
+
+    .lang-dropdown.open { display: block; }
+
+    .lang-dropdown a {
+      display: block;
+      padding: 8px 12px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--gray-600);
       border-radius: 6px;
-      transition: all .2s;
-    }
-
-    .lang-toggle a:hover {
-      color: var(--gray-800);
-      background: var(--gray-100);
+      transition: background .15s, color .15s;
       text-decoration: none;
     }
 
-    .lang-toggle a.active {
-      color: var(--blue);
-      background: var(--blue-light);
-    }
+    .lang-dropdown a:hover { background: var(--blue-light); color: var(--blue); }
+    .lang-dropdown a.active { background: var(--blue-light); color: var(--blue); font-weight: 700; }
 
-    .lang-toggle svg {
-      flex-shrink: 0;
+    @media (max-width: 768px) {
+      .lang-switcher { order: -1; }
+      .lang-dropdown { right: auto; left: 0; }
     }
   </style>
 </head>
@@ -509,6 +536,16 @@
         <img src="https://cdn.shopify.com/app-store/listing_images/29791390a6731c220695d22200d25fb3/icon/CPfntdvhpJQDEAE=.png" alt="EasyWiderruf" width="36" height="36">
         EasyWiderruf
       </a>
+      <div class="lang-switcher">
+        <button class="lang-btn" id="langBtn" aria-label="Language">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          DE
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+          <a href="avv.html" class="active">Deutsch</a>
+          <a href="dpa.html">English</a>
+        </div>
+      </div>
       <button class="nav-hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menü">
         <span></span><span></span><span></span>
       </button>
@@ -520,10 +557,6 @@
         <li><a href="eu-widerrufsrecht-shopify.html">Ratgeber</a></li>
         <li><a href="https://apps.shopify.com/widerruf-app" class="nav-cta" target="_blank" rel="noopener">Installieren</a></li>
       </ul>
-      <div class="lang-toggle">
-        <a href="javascript:void(0)" class="active"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> DE</a>
-        <a href="dpa.html">EN</a>
-      </div>
     </div>
   </nav>
 
@@ -643,6 +676,19 @@
     window.addEventListener('scroll', function() {
       document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 20);
     });
+
+    // Language switcher
+    var langBtn = document.getElementById('langBtn');
+    var langDrop = document.getElementById('langDropdown');
+    if (langBtn && langDrop) {
+      langBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        langDrop.classList.toggle('open');
+      });
+      document.addEventListener('click', function() {
+        langDrop.classList.remove('open');
+      });
+    }
   </script>
 
 </body>
