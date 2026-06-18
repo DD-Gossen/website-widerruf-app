@@ -660,6 +660,75 @@
       margin: 0 auto;
     }
 
+
+    .promo-banner {
+      max-width: 760px;
+      margin: 32px auto 0;
+      background: linear-gradient(135deg, #0044CC 0%, #0055FF 100%);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      text-align: left;
+      color: var(--white);
+    }
+
+    .promo-banner-text {
+      flex: 1;
+    }
+
+    .promo-banner-text strong {
+      display: block;
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+
+    .promo-banner-text span {
+      font-size: 14px;
+      opacity: 0.85;
+    }
+
+    .promo-code-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255,255,255,.15);
+      border: 1.5px dashed rgba(255,255,255,.5);
+      border-radius: 10px;
+      padding: 12px 18px;
+      flex-shrink: 0;
+      cursor: pointer;
+      transition: background .2s;
+    }
+
+    .promo-code-box:hover {
+      background: rgba(255,255,255,.25);
+    }
+
+    .promo-code-box code {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+    }
+
+    .promo-code-box .copy-hint {
+      font-size: 11px;
+      opacity: 0.7;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 640px) {
+      .promo-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px 20px;
+      }
+    }
+
     /* ── Pricing ── */
     .pricing {
       padding: 80px 0;
@@ -1293,6 +1362,16 @@
           <a href="https://apps.shopify.com/widerruf-app" class="btn btn-primary" target="_blank" rel="noopener">Bain triail saor in aisce ar feadh 14 lá</a>
         </div>
       </div>
+      <div class="promo-banner" id="promoBanner" style="display:none;">
+        <div class="promo-banner-text">
+          <strong>50% off your first 3 months of Pro</strong>
+          <span>Enter this code when upgrading in the app. Valid until June 30, 2026.</span>
+        </div>
+        <div class="promo-code-box" onclick="navigator.clipboard.writeText('EASY50');this.querySelector('.copy-hint').textContent='Copied!';setTimeout(()=>this.querySelector('.copy-hint').textContent='Click to copy',2000)">
+          <code>EASY50</code>
+          <span class="copy-hint">Click to copy</span>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -1386,6 +1465,15 @@
         langDrop.classList.remove('open');
       });
     }
+
+    // Promo banner: show only until 2026-06-30 (end of day UTC+2)
+    (function() {
+      var expiry = new Date('2026-07-01T00:00:00+02:00');
+      var banner = document.getElementById('promoBanner');
+      if (banner && new Date() < expiry) {
+        banner.style.display = '';
+      }
+    })();
   </script>
 </body>
 </html>
