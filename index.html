@@ -71,14 +71,14 @@
             "price": "0",
             "priceCurrency": "USD",
             "name": "Free",
-            "description": "Widerrufsformular, E-Mail-Bestätigungen, 1 Sprache, Dashboard"
+            "description": "Widerrufsbutton und Formular, Bestätigungsmails mit Zeitstempel in allen 24 EU-Sprachen, Dashboard, Bestellprüfung"
         },
         {
             "@type": "Offer",
             "price": "12",
             "priceCurrency": "USD",
             "name": "Pro",
-            "description": "24 EU-Sprachen, Custom E-Mail-Templates, eigene Absender-Domain, Shopify Returns"
+            "description": "Produktausschluss per Tag oder Kollektion, eigene Widerrufsfrist, automatische Shopify Returns, automatische Stornierung, eigenes Logo, eigene Absender-Domain, eigenes SMTP, Formular-Design ohne Branding, Button nur für EU-Kunden"
         }
     ],
     "author": {
@@ -132,7 +132,7 @@
             "name": "Welche Sprachen werden unterstützt?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Im Free-Plan Deutsch oder Englisch. Im Pro-Plan alle 24 EU-Amtssprachen, sodass dein Formular und die Bestätigungsmails automatisch in der Sprache deiner Kunden erscheinen."
+                "text": "Alle 24 EU-Amtssprachen, auch im Free-Plan. Formular und Bestätigungsmails passen sich automatisch an die Kundensprache an. Die App-Oberfläche gibt es auf Deutsch, Englisch, Französisch, Italienisch, Spanisch und Dänisch."
             }
         },
         {
@@ -148,7 +148,7 @@
             "name": "Was kostet EasyWiderruf?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Der Free-Plan ist dauerhaft kostenlos und deckt die Grundfunktionen ab. Der Pro-Plan kostet $12/Monat oder $120/Jahr (17% Ersparnis) und bietet alle 24 Sprachen, Custom E-Mail-Templates und Shopify Returns Integration."
+                "text": "Der Free-Plan ist dauerhaft kostenlos und enthält das Formular, Bestätigungsmails in allen 24 EU-Sprachen und das Dashboard. Der Pro-Plan kostet $12/Monat oder $120/Jahr (17% Ersparnis) und bietet unter anderem automatische Shopify Returns, Produktausschlüsse, eine eigene Widerrufsfrist und eine eigene Absender-Domain."
             }
         }
     ,
@@ -157,7 +157,7 @@
             "name": "Kann ich bestimmte Produkte vom Widerruf ausschließen?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Ja. Im Pro-Plan kannst du Produkt-Tags festlegen (z.B. E-Book, Maßanfertigung). Produkte mit diesen Tags werden automatisch vom Widerruf ausgeschlossen. Zusätzlich lässt sich ein maximales Bestellalter einstellen."
+                "text": "Ja. Im Pro-Plan kannst du Produkt-Tags festlegen (z.B. E-Book, Maßanfertigung). Produkte mit diesen Tags werden automatisch vom Widerruf ausgeschlossen. Auch ganze Kollektionen lassen sich ausschließen. Die Widerrufsfrist im Formular zählt ab Lieferung: im Free-Plan 20 Tage, mit Pro legst du sie selbst fest (ab 14 Tagen oder ohne Begrenzung)."
             }
         }
     ]
@@ -1262,14 +1262,14 @@
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
           </div>
           <h3>24 EU-Sprachen</h3>
-          <p>Formular und E-Mails in allen EU-Amtssprachen. Von Deutsch und Englisch bis Schwedisch und Polnisch. Automatisch passend zur Shop-Sprache.</p>
+          <p>Formular und E-Mails in allen EU-Amtssprachen. Von Deutsch und Englisch bis Schwedisch und Polnisch. Automatisch passend zur Shop-Sprache. Die App-Oberfläche gibt es auf Deutsch, Englisch, Französisch, Italienisch, Spanisch und Dänisch.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
           </div>
           <h3>Dashboard</h3>
-          <p>Alle Widerrufe im Blick. Status-Tracking, Bestellnummer, Zeitstempel, Gründe. Filtere nach Status und exportiere bei Bedarf.</p>
+          <p>Alle Widerrufe im Blick. Status-Tracking, Bestellnummer, Zeitstempel. Filtere nach Status und exportiere bei Bedarf.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
@@ -1290,7 +1290,7 @@
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
           </div>
           <h3>Produkte ausschließen</h3>
-          <p>Schließe bestimmte Produkte vom Widerruf aus. Vergib Tags wie "E-Book" oder "Maßanfertigung" in Shopify und diese Produkte können nicht widerrufen werden. Du kannst auch die Widerrufsfrist begrenzen.</p>
+          <p>Schließe bestimmte Produkte vom Widerruf aus. Vergib Tags wie "E-Book" oder "Maßanfertigung" in Shopify und diese Produkte können nicht widerrufen werden. Die Widerrufsfrist im Formular zählt ab Lieferung: im Free-Plan 20 Tage, mit Pro legst du sie selbst fest (ab 14 Tagen oder ohne Begrenzung).</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
@@ -1355,11 +1355,14 @@
           <div class="price-sub">Dauerhaft kostenlos</div>
           <ul class="price-features">
             <li>EU-Widerrufsbutton &amp; Formular</li>
-            <li>Bestätigungsmails</li>
-            <li>1 Sprache (DE oder EN)</li>
+            <li>Formular und Bestätigungsmail in allen 24 EU-Sprachen</li>
+            <li>Bestätigungsmail mit Zeitstempel</li>
+            <li>Mailtexte bearbeitbar</li>
             <li>Dashboard mit Status-Tracking</li>
             <li>Bestellnummer-Prüfung</li>
-            <li>DSGVO-konform</li>
+            <li>Benachrichtigung an dich per Mail</li>
+            <li>Widerrufsfrist im Formular: 20 Tage ab Lieferung</li>
+            <li>DSGVO-konform, Hosting in Frankfurt</li>
           </ul>
           <a href="https://apps.shopify.com/widerruf-app?locale=de" class="btn btn-secondary" target="_blank" rel="noopener">Kostenlos starten</a>
         </div>
@@ -1369,25 +1372,19 @@
           <div class="price-amount">$12 <span>/ Monat</span></div>
           <div class="price-sub">oder $120/Jahr (spare 17%) · 14 Tage kostenlos testen</div>
           <ul class="price-features">
-            <li>Alle 24 EU-Sprachen</li>
-            <li>Custom E-Mail-Templates</li>
-            <li>Eigene Absender-Domain</li>
+            <li>Alles aus Free</li>
+            <li>Produkte per Tag oder Kollektion ausschließen</li>
+            <li>Widerrufsfrist selbst festlegen</li>
             <li>Automatische Shopify Returns</li>
-            <li>Fristüberwachung</li>
-            <li>Kein Branding</li>
+            <li>Unversandte Bestellungen automatisch stornieren</li>
+            <li>Eigenes Logo in den Mails</li>
+            <li>Eigene Absender-Domain</li>
+            <li>Eigener SMTP-Server</li>
             <li>Custom Formular-Design</li>
+            <li>Kein Branding</li>
+            <li>Button nur für EU-Kunden</li>
           </ul>
           <a href="https://apps.shopify.com/widerruf-app?locale=de" class="btn btn-primary" target="_blank" rel="noopener">14 Tage kostenlos testen</a>
-        </div>
-      </div>
-      <div class="promo-banner" id="promoBanner" style="display:none;">
-        <div class="promo-banner-text">
-          <strong>50% Rabatt auf die ersten 3 Monate Pro</strong>
-          <span>Gib den Code beim Upgrade in der App ein. Gültig bis 30. Juni 2026.</span>
-        </div>
-        <div class="promo-code-box" onclick="navigator.clipboard.writeText('EASY50');this.querySelector('.copy-hint').textContent='Kopiert!';setTimeout(()=>this.querySelector('.copy-hint').textContent='Klick zum Kopieren',2000)">
-          <code>EASY50</code>
-          <span class="copy-hint">Klick zum Kopieren</span>
         </div>
       </div>
     </div>
@@ -1412,7 +1409,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Welche Sprachen werden unterstützt?</button>
-          <div class="faq-a"><p>Im Free-Plan Deutsch oder Englisch. Im Pro-Plan alle 24 EU-Amtssprachen. Formular und Bestätigungsmails passen sich automatisch an die Kundensprache an.</p></div>
+          <div class="faq-a"><p>Alle 24 EU-Amtssprachen, auch im Free-Plan. Formular und Bestätigungsmails passen sich automatisch an die Kundensprache an. Die App-Oberfläche gibt es auf Deutsch, Englisch, Französisch, Italienisch, Spanisch und Dänisch.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Ist die App DSGVO-konform?</button>
@@ -1420,11 +1417,11 @@
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Was kostet die App?</button>
-          <div class="faq-a"><p>Der Free-Plan ist dauerhaft kostenlos. Der Pro-Plan kostet $12/Monat oder $120/Jahr (17% Ersparnis) und bietet 24 Sprachen, Custom Templates, eigene Domain und Shopify Returns.</p></div>
+          <div class="faq-a"><p>Der Free-Plan ist dauerhaft kostenlos und enthält das Formular, Bestätigungsmails in allen 24 EU-Sprachen und das Dashboard. Der Pro-Plan kostet $12/Monat oder $120/Jahr (17% Ersparnis) und bietet unter anderem automatische Shopify Returns, Produktausschlüsse, eine eigene Widerrufsfrist und eine eigene Absender-Domain.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Kann ich bestimmte Produkte vom Widerruf ausschließen?</button>
-          <div class="faq-a"><p>Ja. Du kannst im Pro-Plan Produkt-Tags festlegen, z.B. "E-Book" oder "Maßanfertigung". Produkte mit diesen Tags werden im Widerrufsformular automatisch ausgeblendet. Zusätzlich kannst du ein maximales Bestellalter einstellen, nach dem kein Widerruf mehr möglich ist.</p></div>
+          <div class="faq-a"><p>Ja. Du kannst im Pro-Plan Produkt-Tags festlegen, z.B. "E-Book" oder "Maßanfertigung". Produkte mit diesen Tags werden im Widerrufsformular automatisch ausgeblendet. Auch ganze Kollektionen lassen sich ausschließen. Die Widerrufsfrist im Formular zählt ab Lieferung: im Free-Plan 20 Tage, mit Pro legst du sie selbst fest (ab 14 Tagen oder ohne Begrenzung).</p></div>
         </div>
       </div>
     </div>
@@ -1484,15 +1481,6 @@
         langDrop.classList.remove('open');
       });
     }
-
-    // Promo banner: show only until 2026-06-30 (end of day UTC+2)
-    (function() {
-      var expiry = new Date('2026-07-01T00:00:00+02:00');
-      var banner = document.getElementById('promoBanner');
-      if (banner && new Date() < expiry) {
-        banner.style.display = '';
-      }
-    })();
   </script>
 </body>
 </html>

@@ -71,14 +71,14 @@
             "price": "0",
             "priceCurrency": "USD",
             "name": "Free",
-            "description": "Peruuttamislomake, vahvistussähköpostit, 1 kieli, hallintapaneeli"
+            "description": "Peruuttamispainike ja lomake, aikaleimalliset vahvistussähköpostit kaikilla 24 EU-kielellä, hallintapaneeli, tilausnumeron tarkistus"
         },
         {
             "@type": "Offer",
             "price": "12",
             "priceCurrency": "USD",
             "name": "Pro",
-            "description": "24 EU-kieltä, mukautetut sähköpostimallit, oma lähettäjädomain, Shopify Returns"
+            "description": "Tuotteiden poissulkeminen tagin tai kokoelman perusteella, oma peruutusaika, automaattiset Shopify Returns, lähettämättömien tilausten automaattinen peruuttaminen, oma logo, oma lähettäjädomain, oma SMTP, lomakemuotoilu ilman brändäystä, painike vain EU-asiakkaille"
         }
     ],
     "author": {
@@ -132,7 +132,7 @@
             "name": "Mitä kieliä tuetaan?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Saksa tai englanti Free-suunnitelmassa. Kaikki 24 EU:n virallista kieltä Pro-suunnitelmassa, joten lomakkeesi ja vahvistussähköpostisi näkyvät automaattisesti asiakkaiden kielellä."
+                "text": "Kaikki 24 EU:n virallista kieltä, myös Free-suunnitelmassa. Lomake ja vahvistussähköpostit mukautuvat automaattisesti asiakkaan kieleen. Sovelluksen käyttöliittymä on saatavilla saksaksi, englanniksi, ranskaksi, italiaksi, espanjaksi ja tanskaksi."
             }
         },
         {
@@ -148,7 +148,7 @@
             "name": "Mitä EasyWiderruf maksaa?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Free-suunnitelma on ilmainen aina ja kattaa perustoiminnot. Pro-suunnitelma maksaa $12/kuukausi tai $120/vuosi (17% säästö) ja tarjoaa kaikki 24 kieltä, mukautetut sähköpostimallit ja Shopify Returns -integraation."
+                "text": "Free-suunnitelma on aina ilmainen ja sisältää lomakkeen, vahvistussähköpostit kaikilla 24 EU-kielellä ja hallintapaneelin. Pro-suunnitelma maksaa $12/kuukausi tai $120/vuosi (17% säästö) ja tuo muun muassa automaattiset Shopify Returns -palautukset, tuotteiden poissulkemisen, oman peruutusajan ja oman lähettäjädomainin."
             }
         }
     ,
@@ -157,7 +157,7 @@
             "name": "Voinko sulkea tiettejä tuotteita pois peruuttamisoikeudesta?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Kyllä. Pro-paketissa voit määrittää tuotetageja (esim. e-kirja, mittatilaus). Näillä tageilla varustetut tuotteet suljetaan automaattisesti pois peruutuksesta. Voit myös asettaa tilauksen enimilläisiän."
+                "text": "Kyllä. Pro-paketissa voit määrittää tuotetageja (esim. e-kirja, mittatilaus). Näillä tageilla varustetut tuotteet suljetaan automaattisesti pois peruutuksesta. Voit sulkea pois myös kokonaisia kokoelmia. Lomakkeen peruutusaika lasketaan toimituksesta: Free-suunnitelmassa 20 päivää, Pro-suunnitelmassa määrität sen itse (vähintään 14 päivää tai rajoittamaton)."
             }
         }
     ]
@@ -1263,14 +1263,14 @@
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
           </div>
           <h3>24 EU-kieltä</h3>
-          <p>Lomake ja sähköpostit kaikilla EU:n virallisilla kielillä. Saksasta ja englannista ruotsiin ja puolaan. Automaattisesti kaupan kielen mukaan.</p>
+          <p>Lomake ja sähköpostit kaikilla EU:n virallisilla kielillä. Saksasta ja englannista ruotsiin ja puolaan. Automaattisesti kaupan kielen mukaan. Sovelluksen käyttöliittymä on saatavilla saksaksi, englanniksi, ranskaksi, italiaksi, espanjaksi ja tanskaksi.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
           </div>
           <h3>Hallintapaneeli</h3>
-          <p>Kaikki peruutukset yhdellä silmäyksellä. Tilanneseuranta, tilausnumero, aikaleima, syyt. Suodata tilan mukaan ja vie tarvittaessa.</p>
+          <p>Kaikki peruutukset yhdellä silmäyksellä. Tilanneseuranta, tilausnumero, aikaleima. Suodata tilan mukaan ja vie tarvittaessa.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
@@ -1291,7 +1291,7 @@
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
           </div>
           <h3>Sulje tuotteita pois</h3>
-          <p>Sulje tietyt tuotteet pois peruuttamisoikeudesta. Määritä tageja kuten "e-kirja" tai "mittatilaus" Shopifyssa, eivätkä nämä tuotteet ole peruutettavissa. Voit myös rajoittaa peruutusaikaa tilauksen iän perusteella.</p>
+          <p>Sulje tietyt tuotteet pois peruuttamisoikeudesta. Määritä tageja kuten "e-kirja" tai "mittatilaus" Shopifyssa, eivätkä nämä tuotteet ole peruutettavissa. Lomakkeen peruutusaika lasketaan toimituksesta: Free-suunnitelmassa 20 päivää, Pro-suunnitelmassa määrität sen itse (vähintään 14 päivää tai rajoittamaton).</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
@@ -1356,11 +1356,14 @@
           <div class="price-sub">Ilmainen aina</div>
           <ul class="price-features">
             <li>EU-peruuttamispainike &amp; lomake</li>
-            <li>Vahvistussähköpostit</li>
-            <li>1 kieli (DE tai EN)</li>
+            <li>Lomake ja vahvistussähköposti kaikilla 24 EU-kielellä</li>
+            <li>Vahvistussähköposti aikaleimalla</li>
+            <li>Muokattavat sähköpostitekstit</li>
             <li>Hallintapaneeli tilanneseurannalla</li>
             <li>Tilausnumeron tarkistus</li>
-            <li>GDPR-yhteensopiva</li>
+            <li>Sähköposti-ilmoitus sinulle</li>
+            <li>Lomakkeen peruutusaika: 20 päivää toimituksesta</li>
+            <li>GDPR-yhteensopiva, palvelin Frankfurtissa</li>
           </ul>
           <a href="https://apps.shopify.com/widerruf-app?locale=fi" class="btn btn-secondary" target="_blank" rel="noopener">Aloita ilmaiseksi</a>
         </div>
@@ -1370,25 +1373,19 @@
           <div class="price-amount">$12 <span>/ kuukausi</span></div>
           <div class="price-sub">tai $120/vuosi (säästä 17%) · 14 päivän ilmainen kokeilu</div>
           <ul class="price-features">
-            <li>Kaikki 24 EU-kieltä</li>
-            <li>Mukautetut sähköpostimallit</li>
-            <li>Oma lähettäjädomain</li>
+            <li>Kaikki Free-suunnitelman ominaisuudet</li>
+            <li>Sulje tuotteita pois tagin tai kokoelman perusteella</li>
+            <li>Oma peruutusaika</li>
             <li>Automaattiset Shopify Returns</li>
-            <li>Määräaikojen seuranta</li>
-            <li>Ilman brändäystä</li>
+            <li>Peruuta lähettämättömät tilaukset automaattisesti</li>
+            <li>Oma logo sähköposteissa</li>
+            <li>Oma lähettäjädomain</li>
+            <li>Oma SMTP-palvelin</li>
             <li>Mukautettu lomakemuotoilu</li>
+            <li>Ilman brändäystä</li>
+            <li>Painike vain EU-asiakkaille</li>
           </ul>
           <a href="https://apps.shopify.com/widerruf-app?locale=fi" class="btn btn-primary" target="_blank" rel="noopener">Kokeile ilmaiseksi 14 päivää</a>
-        </div>
-      </div>
-      <div class="promo-banner" id="promoBanner" style="display:none;">
-        <div class="promo-banner-text">
-          <strong>50% off your first 3 months of Pro</strong>
-          <span>Enter this code when upgrading in the app. Valid until June 30, 2026.</span>
-        </div>
-        <div class="promo-code-box" onclick="navigator.clipboard.writeText('EASY50');this.querySelector('.copy-hint').textContent='Copied!';setTimeout(()=>this.querySelector('.copy-hint').textContent='Click to copy',2000)">
-          <code>EASY50</code>
-          <span class="copy-hint">Click to copy</span>
         </div>
       </div>
     </div>
@@ -1413,7 +1410,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Mitä kieliä tuetaan?</button>
-          <div class="faq-a"><p>Saksa tai englanti Free-suunnitelmassa. Kaikki 24 EU:n virallista kieltä Pro-suunnitelmassa. Lomake ja vahvistussähköpostit mukautuvat automaattisesti asiakkaan kieleen.</p></div>
+          <div class="faq-a"><p>Kaikki 24 EU:n virallista kieltä, myös Free-suunnitelmassa. Lomake ja vahvistussähköpostit mukautuvat automaattisesti asiakkaan kieleen. Sovelluksen käyttöliittymä on saatavilla saksaksi, englanniksi, ranskaksi, italiaksi, espanjaksi ja tanskaksi.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Onko sovellus GDPR-yhteensopiva?</button>
@@ -1421,11 +1418,11 @@
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Mitä sovellus maksaa?</button>
-          <div class="faq-a"><p>Free-suunnitelma on ilmainen aina. Pro-suunnitelma maksaa $12/kuukausi tai $120/vuosi (17% säästö) ja tarjoaa 24 kieltä, mukautetut mallit, oman domainin ja Shopify Returns.</p></div>
+          <div class="faq-a"><p>Free-suunnitelma on aina ilmainen ja sisältää lomakkeen, vahvistussähköpostit kaikilla 24 EU-kielellä ja hallintapaneelin. Pro-suunnitelma maksaa $12/kuukausi tai $120/vuosi (17% säästö) ja tuo muun muassa automaattiset Shopify Returns -palautukset, tuotteiden poissulkemisen, oman peruutusajan ja oman lähettäjädomainin.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Voinko sulkea tiettejä tuotteita pois peruuttamisoikeudesta?</button>
-          <div class="faq-a"><p>Kyllä. Pro-paketissa voit määrittää tuotetageja, esim. "e-kirja" tai "mittatilaus". Näillä tageilla varustetut tuotteet piilotetaan automaattisesti peruutuslomakkeesta. Voit myös asettaa tilauksen enimilläisiän.</p></div>
+          <div class="faq-a"><p>Kyllä. Pro-paketissa voit määrittää tuotetageja, esim. "e-kirja" tai "mittatilaus". Näillä tageilla varustetut tuotteet piilotetaan automaattisesti peruutuslomakkeesta. Voit sulkea pois myös kokonaisia kokoelmia. Lomakkeen peruutusaika lasketaan toimituksesta: Free-suunnitelmassa 20 päivää, Pro-suunnitelmassa määrität sen itse (vähintään 14 päivää tai rajoittamaton).</p></div>
         </div>
       </div>
     </div>
@@ -1485,15 +1482,6 @@
         langDrop.classList.remove('open');
       });
     }
-
-    // Promo banner: show only until 2026-06-30 (end of day UTC+2)
-    (function() {
-      var expiry = new Date('2026-07-01T00:00:00+02:00');
-      var banner = document.getElementById('promoBanner');
-      if (banner && new Date() < expiry) {
-        banner.style.display = '';
-      }
-    })();
   </script>
 </body>
 </html>

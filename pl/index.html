@@ -71,14 +71,14 @@
             "price": "0",
             "priceCurrency": "USD",
             "name": "Free",
-            "description": "Formularz odstąpienia, e-maile potwierdzające, 1 język, panel"
+            "description": "Przycisk i formularz odstąpienia, e-maile potwierdzające ze znacznikiem czasu we wszystkich 24 językach UE, panel, weryfikacja zamówień"
         },
         {
             "@type": "Offer",
             "price": "12",
             "priceCurrency": "USD",
             "name": "Pro",
-            "description": "24 języki UE, własne szablony e-mail, własna domena nadawcy, Shopify Returns"
+            "description": "Wykluczanie produktów według tagu lub kolekcji, własny termin odstąpienia, automatyczne Shopify Returns, automatyczne anulowanie, własne logo, własna domena nadawcy, własny SMTP, wygląd formularza bez brandingu, przycisk tylko dla klientów z UE"
         }
     ],
     "author": {
@@ -132,7 +132,7 @@
             "name": "Jakie języki są obsługiwane?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Niemiecki lub angielski w planie Free. Wszystkie 24 oficjalne języki UE w planie Pro, więc Twój formularz i e-maile potwierdzające automatycznie wyświetlają się w języku klientów."
+                "text": "Wszystkie 24 oficjalne języki UE, także w planie Free. Formularz i e-maile potwierdzające automatycznie dostosowują się do języka klienta. Interfejs aplikacji jest dostępny po niemiecku, angielsku, francusku, włosku, hiszpańsku i duńsku."
             }
         },
         {
@@ -148,7 +148,7 @@
             "name": "Ile kosztuje EasyWiderruf?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Plan Free jest na zawsze za darmo i pokrywa podstawowe funkcje. Plan Pro kosztuje $12/miesiąc lub $120/rok (17% oszczędności) i oferuje wszystkie 24 języki, własne szablony e-mail i integrację z Shopify Returns."
+                "text": "Plan Free jest na zawsze za darmo i obejmuje formularz, e-maile potwierdzające we wszystkich 24 językach UE oraz panel. Plan Pro kosztuje $12/miesiąc lub $120/rok (17% oszczędności) i dodaje m.in. automatyczne Shopify Returns, wykluczanie produktów, własny termin odstąpienia i własną domenę nadawcy."
             }
         }
     ,
@@ -157,7 +157,7 @@
             "name": "Czy mogę wykluczyć określone produkty z prawa do odstąpienia?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Tak. W planie Pro możesz zdefiniować tagi produktowe (np. e-book, na zamówienie). Produkty z tymi tagami są automatycznie wykluczane z odstąpienia. Możesz też ustawić maksymalny wiek zamówienia."
+                "text": "Tak. W planie Pro możesz zdefiniować tagi produktowe (np. e-book, na zamówienie). Produkty z tymi tagami są automatycznie wykluczane z odstąpienia. Możesz też wykluczyć całe kolekcje. Termin odstąpienia w formularzu liczy się od dostawy: 20 dni w planie Free, w planie Pro ustalasz go sam (od 14 dni lub bez limitu)."
             }
         }
     ]
@@ -1263,14 +1263,14 @@
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
           </div>
           <h3>24 języki UE</h3>
-          <p>Formularz i e-maile we wszystkich oficjalnych językach UE. Od niemieckiego i angielskiego po szwedzki i polski. Automatycznie dopasowane do języka sklepu.</p>
+          <p>Formularz i e-maile we wszystkich oficjalnych językach UE. Od niemieckiego i angielskiego po szwedzki i polski. Automatycznie dopasowane do języka sklepu. Interfejs aplikacji jest dostępny po niemiecku, angielsku, francusku, włosku, hiszpańsku i duńsku.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
           </div>
           <h3>Panel</h3>
-          <p>Wszystkie odstąpienia w jednym miejscu. Śledzenie statusu, numer zamówienia, znacznik czasu, powody. Filtruj według statusu i eksportuj w razie potrzeby.</p>
+          <p>Wszystkie odstąpienia w jednym miejscu. Śledzenie statusu, numer zamówienia, znacznik czasu. Filtruj według statusu i eksportuj w razie potrzeby.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
@@ -1291,7 +1291,7 @@
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
           </div>
           <h3>Wyklucz produkty</h3>
-          <p>Wyklucz określone produkty z prawa do odstąpienia. Przypisz tagi jak "e-book" lub "na zamówienie" w Shopify, a te produkty nie będą podlegać odstąpieniu. Możesz też ograniczyć okres odstąpienia na podstawie wieku zamówienia.</p>
+          <p>Wyklucz określone produkty z prawa do odstąpienia. Przypisz tagi jak "e-book" lub "na zamówienie" w Shopify, a te produkty nie będą podlegać odstąpieniu. Termin odstąpienia w formularzu liczy się od dostawy: 20 dni w planie Free, w planie Pro ustalasz go sam (od 14 dni lub bez limitu).</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
@@ -1356,11 +1356,14 @@
           <div class="price-sub">Na zawsze za darmo</div>
           <ul class="price-features">
             <li>Przycisk odstąpienia UE &amp; formularz</li>
-            <li>E-maile potwierdzające</li>
-            <li>1 język (DE lub EN)</li>
+            <li>Formularz i e-mail potwierdzający we wszystkich 24 językach UE</li>
+            <li>E-mail potwierdzający ze znacznikiem czasu</li>
+            <li>Edytowalne treści e-maili</li>
             <li>Panel ze śledzeniem statusu</li>
             <li>Weryfikacja numeru zamówienia</li>
-            <li>Zgodny z RODO</li>
+            <li>Powiadomienie e-mail dla Ciebie</li>
+            <li>Termin w formularzu: 20 dni od dostawy</li>
+            <li>Zgodny z RODO, hosting we Frankfurcie</li>
           </ul>
           <a href="https://apps.shopify.com/widerruf-app?locale=pl" class="btn btn-secondary" target="_blank" rel="noopener">Zacznij za darmo</a>
         </div>
@@ -1370,25 +1373,19 @@
           <div class="price-amount">$12 <span>/ miesiąc</span></div>
           <div class="price-sub">lub $120/rok (oszczędź 17%) · 14 dni za darmo</div>
           <ul class="price-features">
-            <li>Wszystkie 24 języki UE</li>
-            <li>Własne szablony e-mail</li>
-            <li>Własna domena nadawcy</li>
+            <li>Wszystko z planu Free</li>
+            <li>Wykluczanie produktów według tagu lub kolekcji</li>
+            <li>Własny termin odstąpienia</li>
             <li>Automatyczne Shopify Returns</li>
-            <li>Monitorowanie terminów</li>
-            <li>Bez brandingu</li>
+            <li>Automatyczne anulowanie niewysłanych zamówień</li>
+            <li>Własne logo w e-mailach</li>
+            <li>Własna domena nadawcy</li>
+            <li>Własny serwer SMTP</li>
             <li>Własny wygląd formularza</li>
+            <li>Bez brandingu</li>
+            <li>Przycisk tylko dla klientów z UE</li>
           </ul>
           <a href="https://apps.shopify.com/widerruf-app?locale=pl" class="btn btn-primary" target="_blank" rel="noopener">Wypróbuj za darmo przez 14 dni</a>
-        </div>
-      </div>
-      <div class="promo-banner" id="promoBanner" style="display:none;">
-        <div class="promo-banner-text">
-          <strong>50% off your first 3 months of Pro</strong>
-          <span>Enter this code when upgrading in the app. Valid until June 30, 2026.</span>
-        </div>
-        <div class="promo-code-box" onclick="navigator.clipboard.writeText('EASY50');this.querySelector('.copy-hint').textContent='Copied!';setTimeout(()=>this.querySelector('.copy-hint').textContent='Click to copy',2000)">
-          <code>EASY50</code>
-          <span class="copy-hint">Click to copy</span>
         </div>
       </div>
     </div>
@@ -1413,7 +1410,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Jakie języki są obsługiwane?</button>
-          <div class="faq-a"><p>Niemiecki lub angielski w planie Free. Wszystkie 24 oficjalne języki UE w planie Pro. Formularz i e-maile potwierdzające automatycznie dostosowują się do języka klienta.</p></div>
+          <div class="faq-a"><p>Wszystkie 24 oficjalne języki UE, także w planie Free. Formularz i e-maile potwierdzające automatycznie dostosowują się do języka klienta. Interfejs aplikacji jest dostępny po niemiecku, angielsku, francusku, włosku, hiszpańsku i duńsku.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Czy aplikacja jest zgodna z RODO?</button>
@@ -1421,11 +1418,11 @@
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Ile kosztuje aplikacja?</button>
-          <div class="faq-a"><p>Plan Free jest na zawsze za darmo. Plan Pro kosztuje $12/miesiąc lub $120/rok (17% oszczędności) i oferuje 24 języki, własne szablony, własną domenę i Shopify Returns.</p></div>
+          <div class="faq-a"><p>Plan Free jest na zawsze za darmo i obejmuje formularz, e-maile potwierdzające we wszystkich 24 językach UE oraz panel. Plan Pro kosztuje $12/miesiąc lub $120/rok (17% oszczędności) i dodaje m.in. automatyczne Shopify Returns, wykluczanie produktów, własny termin odstąpienia i własną domenę nadawcy.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Czy mogę wykluczyć określone produkty z prawa do odstąpienia?</button>
-          <div class="faq-a"><p>Tak. W planie Pro możesz zdefiniować tagi produktowe, np. "e-book" lub "na zamówienie". Produkty z tymi tagami są automatycznie ukrywane w formularzu odstąpienia. Możesz też ustawić maksymalny wiek zamówienia.</p></div>
+          <div class="faq-a"><p>Tak. W planie Pro możesz zdefiniować tagi produktowe, np. "e-book" lub "na zamówienie". Produkty z tymi tagami są automatycznie ukrywane w formularzu odstąpienia. Możesz też wykluczyć całe kolekcje. Termin odstąpienia w formularzu liczy się od dostawy: 20 dni w planie Free, w planie Pro ustalasz go sam (od 14 dni lub bez limitu).</p></div>
         </div>
       </div>
     </div>
@@ -1485,15 +1482,6 @@
         langDrop.classList.remove('open');
       });
     }
-
-    // Promo banner: show only until 2026-06-30 (end of day UTC+2)
-    (function() {
-      var expiry = new Date('2026-07-01T00:00:00+02:00');
-      var banner = document.getElementById('promoBanner');
-      if (banner && new Date() < expiry) {
-        banner.style.display = '';
-      }
-    })();
   </script>
 </body>
 </html>

@@ -71,14 +71,14 @@
             "price": "0",
             "priceCurrency": "USD",
             "name": "Free",
-            "description": "Ångerformulär, bekräftelsemail, 1 språk, instrumentpanel"
+            "description": "Ångerknapp och formulär, bekräftelsemail med tidsstämpel på alla 24 EU-språk, instrumentpanel, ordernummerkontroll"
         },
         {
             "@type": "Offer",
             "price": "12",
             "priceCurrency": "USD",
             "name": "Pro",
-            "description": "24 EU-språk, anpassade e-postmallar, egen avsändardomän, Shopify Returns"
+            "description": "Uteslutning av produkter via tagg eller kollektion, egen ångerfrist, automatiska Shopify Returns, automatisk annullering, egen logotyp, egen avsändardomän, egen SMTP, formulärdesign utan branding, knapp bara för EU-kunder"
         }
     ],
     "author": {
@@ -132,7 +132,7 @@
             "name": "Vilka språk stöds?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Tyska eller engelska i Free-planen. Alla 24 officiella EU-språk i Pro-planen, så formuläret och bekräftelsemailen visas automatiskt på kundens språk."
+                "text": "Alla 24 officiella EU-språk, även i Free-planen. Formuläret och bekräftelsemailen anpassas automatiskt till kundens språk. Själva appen finns på tyska, engelska, franska, italienska, spanska och danska."
             }
         },
         {
@@ -148,7 +148,7 @@
             "name": "Vad kostar EasyWiderruf?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Free-planen är gratis för alltid och täcker grundfunktionerna. Pro-planen kostar $12/månad eller $120/år (17% besparing) och erbjuder alla 24 språk, anpassade e-postmallar och Shopify Returns-integration."
+                "text": "Free-planen är gratis för alltid och innehåller formuläret, bekräftelsemail på alla 24 EU-språk och instrumentpanelen. Pro-planen kostar $12/månad eller $120/år (17% besparing) och ger bland annat automatiska Shopify Returns, uteslutning av produkter, egen ångerfrist och egen avsändardomän."
             }
         }
     ,
@@ -157,7 +157,7 @@
             "name": "Kan jag utesluta vissa produkter från ångerrätten?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Ja. Med Pro-planen kan du definiera produkttaggar (t.ex. e-bok, specialtillverkad). Produkter med dessa taggar utesluts automatiskt från ångerrätten. Du kan också ställa in en maximal beställningsålder."
+                "text": "Ja. Med Pro-planen kan du definiera produkttaggar (t.ex. e-bok, specialtillverkad). Produkter med dessa taggar utesluts automatiskt från ångerrätten. Du kan också utesluta hela kollektioner. Ångerfristen i formuläret räknas från leverans: 20 dagar i Free-planen, med Pro bestämmer du den själv (från 14 dagar eller utan gräns)."
             }
         }
     ]
@@ -1263,14 +1263,14 @@
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
           </div>
           <h3>24 EU-språk</h3>
-          <p>Formulär och e-post på alla officiella EU-språk. Från tyska och engelska till svenska och polska. Automatiskt anpassat till butikens språk.</p>
+          <p>Formulär och e-post på alla officiella EU-språk. Från tyska och engelska till svenska och polska. Automatiskt anpassat till butikens språk. Själva appen finns på tyska, engelska, franska, italienska, spanska och danska.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
           </div>
           <h3>Instrumentpanel</h3>
-          <p>Alla ånger på ett ställe. Statusspårning, ordernummer, tidsstämpel, orsaker. Filtrera efter status och exportera vid behov.</p>
+          <p>Alla ånger på ett ställe. Statusspårning, ordernummer, tidsstämpel. Filtrera efter status och exportera vid behov.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
@@ -1291,7 +1291,7 @@
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
           </div>
           <h3>Uteslut produkter</h3>
-          <p>Uteslut specifika produkter från ångerrätten. Tilldela taggar som "e-bok" eller "specialtillverkad" i Shopify så kan dessa produkter inte ångras. Du kan också begränsa ångerfristen baserat på beställningens ålder.</p>
+          <p>Uteslut specifika produkter från ångerrätten. Tilldela taggar som "e-bok" eller "specialtillverkad" i Shopify så kan dessa produkter inte ångras. Ångerfristen i formuläret räknas från leverans: 20 dagar i Free-planen, med Pro bestämmer du den själv (från 14 dagar eller utan gräns).</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
@@ -1356,11 +1356,14 @@
           <div class="price-sub">Gratis för alltid</div>
           <ul class="price-features">
             <li>EU-ångerknapp &amp; formulär</li>
-            <li>Bekräftelsemail</li>
-            <li>1 språk (DE eller EN)</li>
+            <li>Formulär och bekräftelsemail på alla 24 EU-språk</li>
+            <li>Bekräftelsemail med tidsstämpel</li>
+            <li>Redigerbara mailtexter</li>
             <li>Instrumentpanel med statusspårning</li>
             <li>Ordernummerverifiering</li>
-            <li>GDPR-kompatibel</li>
+            <li>Mailavisering till dig</li>
+            <li>Frist i formuläret: 20 dagar från leverans</li>
+            <li>GDPR-kompatibel, hosting i Frankfurt</li>
           </ul>
           <a href="https://apps.shopify.com/widerruf-app?locale=sv" class="btn btn-secondary" target="_blank" rel="noopener">Börja gratis</a>
         </div>
@@ -1370,25 +1373,19 @@
           <div class="price-amount">$12 <span>/ månad</span></div>
           <div class="price-sub">eller $120/år (spara 17%) · 14 dagars gratis provperiod</div>
           <ul class="price-features">
-            <li>Alla 24 EU-språk</li>
-            <li>Anpassade e-postmallar</li>
-            <li>Egen avsändardomän</li>
+            <li>Allt i Free</li>
+            <li>Uteslut produkter via tagg eller kollektion</li>
+            <li>Bestäm din egen ångerfrist</li>
             <li>Automatiska Shopify Returns</li>
-            <li>Fristövervakning</li>
-            <li>Utan branding</li>
+            <li>Annullera ej skickade ordrar automatiskt</li>
+            <li>Din egen logotyp i mailen</li>
+            <li>Egen avsändardomän</li>
+            <li>Din egen SMTP-server</li>
             <li>Anpassad formulärdesign</li>
+            <li>Utan branding</li>
+            <li>Knapp bara för EU-kunder</li>
           </ul>
           <a href="https://apps.shopify.com/widerruf-app?locale=sv" class="btn btn-primary" target="_blank" rel="noopener">Prova gratis i 14 dagar</a>
-        </div>
-      </div>
-      <div class="promo-banner" id="promoBanner" style="display:none;">
-        <div class="promo-banner-text">
-          <strong>50% off your first 3 months of Pro</strong>
-          <span>Enter this code when upgrading in the app. Valid until June 30, 2026.</span>
-        </div>
-        <div class="promo-code-box" onclick="navigator.clipboard.writeText('EASY50');this.querySelector('.copy-hint').textContent='Copied!';setTimeout(()=>this.querySelector('.copy-hint').textContent='Click to copy',2000)">
-          <code>EASY50</code>
-          <span class="copy-hint">Click to copy</span>
         </div>
       </div>
     </div>
@@ -1413,7 +1410,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Vilka språk stöds?</button>
-          <div class="faq-a"><p>Tyska eller engelska i Free-planen. Alla 24 officiella EU-språk i Pro-planen. Formuläret och bekräftelsemailen anpassas automatiskt till kundens språk.</p></div>
+          <div class="faq-a"><p>Alla 24 officiella EU-språk, även i Free-planen. Formuläret och bekräftelsemailen anpassas automatiskt till kundens språk. Själva appen finns på tyska, engelska, franska, italienska, spanska och danska.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Är appen GDPR-kompatibel?</button>
@@ -1421,11 +1418,11 @@
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Vad kostar appen?</button>
-          <div class="faq-a"><p>Free-planen är gratis för alltid. Pro-planen kostar $12/månad eller $120/år (17% besparing) och erbjuder 24 språk, anpassade mallar, egen domän och Shopify Returns.</p></div>
+          <div class="faq-a"><p>Free-planen är gratis för alltid och innehåller formuläret, bekräftelsemail på alla 24 EU-språk och instrumentpanelen. Pro-planen kostar $12/månad eller $120/år (17% besparing) och ger bland annat automatiska Shopify Returns, uteslutning av produkter, egen ångerfrist och egen avsändardomän.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Kan jag utesluta vissa produkter från ångerrätten?</button>
-          <div class="faq-a"><p>Ja. Med Pro-planen kan du definiera produkttaggar, t.ex. "e-bok" eller "specialtillverkad". Produkter med dessa taggar döljs automatiskt i ångerformuläret. Du kan också ställa in en maximal beställningsålder.</p></div>
+          <div class="faq-a"><p>Ja. Med Pro-planen kan du definiera produkttaggar, t.ex. "e-bok" eller "specialtillverkad". Produkter med dessa taggar döljs automatiskt i ångerformuläret. Du kan också utesluta hela kollektioner. Ångerfristen i formuläret räknas från leverans: 20 dagar i Free-planen, med Pro bestämmer du den själv (från 14 dagar eller utan gräns).</p></div>
         </div>
       </div>
     </div>
@@ -1485,15 +1482,6 @@
         langDrop.classList.remove('open');
       });
     }
-
-    // Promo banner: show only until 2026-06-30 (end of day UTC+2)
-    (function() {
-      var expiry = new Date('2026-07-01T00:00:00+02:00');
-      var banner = document.getElementById('promoBanner');
-      if (banner && new Date() < expiry) {
-        banner.style.display = '';
-      }
-    })();
   </script>
 </body>
 </html>

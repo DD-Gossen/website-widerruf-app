@@ -71,14 +71,14 @@
             "price": "0",
             "priceCurrency": "USD",
             "name": "Free",
-            "description": "Obrazec za odstop, potrditvena e-poštna sporočila, 1 jezik, nadzorna plošča"
+            "description": "Gumb in obrazec za odstop, potrditvena e-poštna sporočila s časovnim žigom v vseh 24 jezikih EU, nadzorna plošča, preverjanje naročil"
         },
         {
             "@type": "Offer",
             "price": "12",
             "priceCurrency": "USD",
             "name": "Pro",
-            "description": "24 EU jezikov, prilagojene predloge e-pošte, lastna domena pošiljatelja, Shopify Returns"
+            "description": "Izključitev izdelkov po oznaki ali zbirki, lasten rok za odstop, samodejni Shopify Returns, samodejni preklic naročil, lasten logotip, lastna domena pošiljatelja, lasten SMTP, dizajn obrazca brez brandinga, gumb samo za stranke iz EU"
         }
     ],
     "author": {
@@ -132,7 +132,7 @@
             "name": "Kateri jeziki so podprti?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Nemščina ali angleščina v paketu Free. Vseh 24 uradnih jezikov EU v paketu Pro."
+                "text": "Vseh 24 uradnih jezikov EU, tudi v paketu Free. Obrazec in potrditvena e-poštna sporočila se samodejno prilagodijo jeziku stranke. Vmesnik aplikacije je na voljo v nemščini, angleščini, francoščini, italijanščini, španščini in danščini."
             }
         },
         {
@@ -148,7 +148,7 @@
             "name": "Koliko stane EasyWiderruf?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Paket Free je za vedno brezplačen in pokriva osnovne funkcije. Paket Pro stane $12/mesec ali $120/leto (17% prihranka) in ponuja vseh 24 jezikov, prilagojene predloge e-pošte in integracijo Shopify Returns."
+                "text": "Paket Free je za vedno brezplačen in vključuje obrazec, potrditvena e-poštna sporočila v vseh 24 jezikih EU in nadzorno ploščo. Paket Pro stane $12/mesec ali $120/leto (17% prihranka) in med drugim doda samodejne Shopify Returns, izključitev izdelkov, lasten rok za odstop in lastno domeno pošiljatelja."
             }
         }
     ,
@@ -157,7 +157,7 @@
             "name": "Ali lahko izključim določene izdelke iz pravice do odstopa?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Da. S Pro načrtom lahko določite oznake izdelkov (npr. e-knjiga, po meri). Izdelki s temi oznakami so samodejno izključeni iz odstopa. Nastavite lahko tudi maksimalno starost naročila."
+                "text": "Da. S Pro načrtom lahko določite oznake izdelkov (npr. e-knjiga, po meri). Izdelki s temi oznakami so samodejno izključeni iz odstopa. Izključite lahko tudi cele zbirke. Rok za odstop v obrazcu se šteje od dostave: v paketu Free 20 dni, s paketom Pro ga določite sami (od 14 dni ali brez omejitve)."
             }
         }
     ]
@@ -1263,14 +1263,14 @@
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
           </div>
           <h3>24 EU jezikov</h3>
-          <p>Obrazec in e-pošta v vseh uradnih jezikih EU. Od nemščine in angleščine do švedščine in poljščine. Samodejno prilagojeno jeziku trgovine.</p>
+          <p>Obrazec in e-pošta v vseh uradnih jezikih EU. Od nemščine in angleščine do švedščine in poljščine. Samodejno prilagojeno jeziku trgovine. Vmesnik aplikacije je na voljo v nemščini, angleščini, francoščini, italijanščini, španščini in danščini.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
           </div>
           <h3>Nadzorna plošča</h3>
-          <p>Vsi odstopi na enem mestu. Sledenje stanja, številka naročila, časovni žig, razlogi. Filtrirajte po stanju in izvozite po potrebi.</p>
+          <p>Vsi odstopi na enem mestu. Sledenje stanja, številka naročila, časovni žig. Filtrirajte po stanju in izvozite po potrebi.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
@@ -1291,7 +1291,7 @@
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
           </div>
           <h3>Izključi izdelke</h3>
-          <p>Izključite določene izdelke iz pravice do odstopa. Dodelite oznake kot "e-knjiga" ali "po meri" v Shopifyju in ti izdelki ne bodo predmet odstopa. Rok za odstop lahko omejite tudi glede na starost naročila.</p>
+          <p>Izključite določene izdelke iz pravice do odstopa. Dodelite oznake kot "e-knjiga" ali "po meri" v Shopifyju in ti izdelki ne bodo predmet odstopa. Rok za odstop v obrazcu se šteje od dostave: v paketu Free 20 dni, s paketom Pro ga določite sami (od 14 dni ali brez omejitve).</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
@@ -1356,11 +1356,14 @@
           <div class="price-sub">Za vedno brezplačno</div>
           <ul class="price-features">
             <li>EU gumb za odstop &amp; obrazec</li>
-            <li>Potrditvena e-poštna sporočila</li>
-            <li>1 jezik (DE ali EN)</li>
+            <li>Obrazec in potrditveno sporočilo v vseh 24 jezikih EU</li>
+            <li>Potrditveno sporočilo s časovnim žigom</li>
+            <li>Urejanje besedil e-pošte</li>
             <li>Nadzorna plošča s sledenjem stanja</li>
             <li>Preverjanje številke naročila</li>
-            <li>V skladu z GDPR</li>
+            <li>Obvestilo po e-pošti za vas</li>
+            <li>Rok v obrazcu: 20 dni od dostave</li>
+            <li>V skladu z GDPR, gostovanje v Frankfurtu</li>
           </ul>
           <a href="https://apps.shopify.com/widerruf-app" class="btn btn-secondary" target="_blank" rel="noopener">Začnite brezplačno</a>
         </div>
@@ -1370,25 +1373,19 @@
           <div class="price-amount">$12 <span>/ mesec</span></div>
           <div class="price-sub">ali $120/leto (prihranite 17%) · 14 dni brezplačnega preizkusa</div>
           <ul class="price-features">
-            <li>Vseh 24 EU jezikov</li>
-            <li>Prilagojene predloge e-pošte</li>
-            <li>Lastna domena pošiljatelja</li>
+            <li>Vse iz paketa Free</li>
+            <li>Izključitev izdelkov po oznaki ali zbirki</li>
+            <li>Lasten rok za odstop</li>
             <li>Samodejni Shopify Returns</li>
-            <li>Spremljanje rokov</li>
-            <li>Brez brandinga</li>
+            <li>Samodejni preklic neodposlanih naročil</li>
+            <li>Lasten logotip v e-pošti</li>
+            <li>Lastna domena pošiljatelja</li>
+            <li>Lasten strežnik SMTP</li>
             <li>Prilagojen dizajn obrazca</li>
+            <li>Brez brandinga</li>
+            <li>Gumb samo za stranke iz EU</li>
           </ul>
           <a href="https://apps.shopify.com/widerruf-app" class="btn btn-primary" target="_blank" rel="noopener">Preizkusite brezplačno 14 dni</a>
-        </div>
-      </div>
-      <div class="promo-banner" id="promoBanner" style="display:none;">
-        <div class="promo-banner-text">
-          <strong>50% off your first 3 months of Pro</strong>
-          <span>Enter this code when upgrading in the app. Valid until June 30, 2026.</span>
-        </div>
-        <div class="promo-code-box" onclick="navigator.clipboard.writeText('EASY50');this.querySelector('.copy-hint').textContent='Copied!';setTimeout(()=>this.querySelector('.copy-hint').textContent='Click to copy',2000)">
-          <code>EASY50</code>
-          <span class="copy-hint">Click to copy</span>
         </div>
       </div>
     </div>
@@ -1413,7 +1410,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Kateri jeziki so podprti?</button>
-          <div class="faq-a"><p>Nemščina ali angleščina v paketu Free. Vseh 24 uradnih jezikov EU v paketu Pro. Obrazec in potrditvena e-poštna sporočila se samodejno prilagodijo jeziku stranke.</p></div>
+          <div class="faq-a"><p>Vseh 24 uradnih jezikov EU, tudi v paketu Free. Obrazec in potrditvena e-poštna sporočila se samodejno prilagodijo jeziku stranke. Vmesnik aplikacije je na voljo v nemščini, angleščini, francoščini, italijanščini, španščini in danščini.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Ali je aplikacija v skladu z GDPR?</button>
@@ -1421,11 +1418,11 @@
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Koliko stane aplikacija?</button>
-          <div class="faq-a"><p>Paket Free je za vedno brezplačen. Paket Pro stane $12/mesec ali $120/leto (17% prihranka) in ponuja 24 jezikov, prilagojene predloge, lastno domeno in Shopify Returns.</p></div>
+          <div class="faq-a"><p>Paket Free je za vedno brezplačen in vključuje obrazec, potrditvena e-poštna sporočila v vseh 24 jezikih EU in nadzorno ploščo. Paket Pro stane $12/mesec ali $120/leto (17% prihranka) in med drugim doda samodejne Shopify Returns, izključitev izdelkov, lasten rok za odstop in lastno domeno pošiljatelja.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Ali lahko izključim določene izdelke iz pravice do odstopa?</button>
-          <div class="faq-a"><p>Da. S Pro načrtom lahko določite oznake izdelkov, npr. "e-knjiga" ali "po meri". Izdelki s temi oznakami so samodejno skriti v obrazcu za odstop. Nastavite lahko tudi maksimalno starost naročila.</p></div>
+          <div class="faq-a"><p>Da. S Pro načrtom lahko določite oznake izdelkov, npr. "e-knjiga" ali "po meri". Izdelki s temi oznakami so samodejno skriti v obrazcu za odstop. Izključite lahko tudi cele zbirke. Rok za odstop v obrazcu se šteje od dostave: v paketu Free 20 dni, s paketom Pro ga določite sami (od 14 dni ali brez omejitve).</p></div>
         </div>
       </div>
     </div>
@@ -1485,15 +1482,6 @@
         langDrop.classList.remove('open');
       });
     }
-
-    // Promo banner: show only until 2026-06-30 (end of day UTC+2)
-    (function() {
-      var expiry = new Date('2026-07-01T00:00:00+02:00');
-      var banner = document.getElementById('promoBanner');
-      if (banner && new Date() < expiry) {
-        banner.style.display = '';
-      }
-    })();
   </script>
 </body>
 </html>

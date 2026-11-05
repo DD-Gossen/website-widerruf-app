@@ -71,14 +71,14 @@
             "price": "0",
             "priceCurrency": "USD",
             "name": "Free",
-            "description": "Formulário de retratação, e-mails de confirmação, 1 língua, painel de controlo"
+            "description": "Botão e formulário de retratação, e-mails de confirmação com carimbo de data/hora nas 24 línguas da UE, painel de controlo, verificação de encomendas"
         },
         {
             "@type": "Offer",
             "price": "12",
             "priceCurrency": "USD",
             "name": "Pro",
-            "description": "24 línguas UE, templates de e-mail personalizados, domínio de envio próprio, Shopify Returns"
+            "description": "Exclusão de produtos por tag ou coleção, prazo de retratação próprio, Shopify Returns automático, cancelamento automático, logótipo próprio, domínio de envio próprio, SMTP próprio, design do formulário sem branding, botão só para clientes da UE"
         }
     ],
     "author": {
@@ -132,7 +132,7 @@
             "name": "Que línguas são suportadas?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Alemão ou inglês no plano Free. Todas as 24 línguas oficiais da UE no plano Pro, de modo que o seu formulário e e-mails de confirmação apareçam automaticamente na língua dos seus clientes."
+                "text": "Todas as 24 línguas oficiais da UE, também no plano Free. O formulário e os e-mails de confirmação adaptam-se automaticamente à língua do cliente. A interface da app está disponível em alemão, inglês, francês, italiano, espanhol e dinamarquês."
             }
         },
         {
@@ -148,7 +148,7 @@
             "name": "Quanto custa o EasyWiderruf?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "O plano Free é grátis para sempre e cobre as funções básicas. O plano Pro custa $12/mês ou $120/ano (17% de poupança) e oferece todas as 24 línguas, templates de e-mail personalizados e integração Shopify Returns."
+                "text": "O plano Free é grátis para sempre e inclui o formulário, os e-mails de confirmação nas 24 línguas da UE e o painel de controlo. O plano Pro custa $12/mês ou $120/ano (17% de poupança) e acrescenta, entre outras coisas, Shopify Returns automático, exclusão de produtos, um prazo de retratação próprio e um domínio de envio próprio."
             }
         }
     ,
@@ -157,7 +157,7 @@
             "name": "Posso excluir certos produtos do direito de retratação?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Sim. Com o plano Pro pode definir tags de produto (p. ex. e-book, sob medida). Produtos com essas tags são automaticamente excluídos da retratação. Também pode definir uma idade máxima do pedido."
+                "text": "Sim. Com o plano Pro pode definir tags de produto (p. ex. e-book, sob medida). Produtos com essas tags são automaticamente excluídos da retratação. Também pode excluir coleções inteiras. O prazo de retratação no formulário conta a partir da entrega: 20 dias no plano Free, ajustável com Pro (a partir de 14 dias ou sem limite)."
             }
         }
     ]
@@ -1263,14 +1263,14 @@
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
           </div>
           <h3>24 línguas UE</h3>
-          <p>Formulário e e-mails em todas as línguas oficiais da UE. Do alemão e inglês ao sueco e polaco. Automaticamente adaptado à língua da loja.</p>
+          <p>Formulário e e-mails em todas as línguas oficiais da UE. Do alemão e inglês ao sueco e polaco. Automaticamente adaptado à língua da loja. A interface da app está disponível em alemão, inglês, francês, italiano, espanhol e dinamarquês.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
           </div>
           <h3>Painel de controlo</h3>
-          <p>Todas as retratações num relance. Acompanhamento de estado, número de encomenda, carimbo de data/hora, motivos. Filtre por estado e exporte quando necessário.</p>
+          <p>Todas as retratações num relance. Acompanhamento de estado, número de encomenda, carimbo de data/hora. Filtre por estado e exporte quando necessário.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
@@ -1291,7 +1291,7 @@
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
           </div>
           <h3>Excluir produtos</h3>
-          <p>Exclua produtos específicos do direito de retratação. Atribua tags como "e-book" ou "sob medida" no Shopify e esses produtos não poderão ser retratados. Também pode limitar o prazo pela idade do pedido.</p>
+          <p>Exclua produtos específicos do direito de retratação. Atribua tags como "e-book" ou "sob medida" no Shopify e esses produtos não poderão ser retratados. O prazo de retratação no formulário conta a partir da entrega: 20 dias no plano Free, ajustável com Pro (a partir de 14 dias ou sem limite).</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
@@ -1356,11 +1356,14 @@
           <div class="price-sub">Grátis para sempre</div>
           <ul class="price-features">
             <li>Botão de retratação UE &amp; formulário</li>
-            <li>E-mails de confirmação</li>
-            <li>1 língua (DE ou EN)</li>
+            <li>Formulário e e-mail de confirmação nas 24 línguas da UE</li>
+            <li>E-mail de confirmação com carimbo de data/hora</li>
+            <li>Textos de e-mail editáveis</li>
             <li>Painel com acompanhamento de estado</li>
             <li>Verificação de número de encomenda</li>
-            <li>Conforme ao RGPD</li>
+            <li>Notificação por e-mail para si</li>
+            <li>Prazo no formulário: 20 dias após a entrega</li>
+            <li>Conforme ao RGPD, alojado em Frankfurt</li>
           </ul>
           <a href="https://apps.shopify.com/widerruf-app?locale=pt-PT" class="btn btn-secondary" target="_blank" rel="noopener">Começar grátis</a>
         </div>
@@ -1370,25 +1373,19 @@
           <div class="price-amount">$12 <span>/ mês</span></div>
           <div class="price-sub">ou $120/ano (poupe 17%) · 14 dias de teste grátis</div>
           <ul class="price-features">
-            <li>Todas as 24 línguas UE</li>
-            <li>Templates de e-mail personalizados</li>
-            <li>Domínio de envio próprio</li>
+            <li>Tudo do plano Free</li>
+            <li>Excluir produtos por tag ou coleção</li>
+            <li>Definir o seu próprio prazo de retratação</li>
             <li>Shopify Returns automático</li>
-            <li>Monitorização de prazos</li>
-            <li>Sem branding</li>
+            <li>Cancelar automaticamente encomendas não enviadas</li>
+            <li>O seu logótipo nos e-mails</li>
+            <li>Domínio de envio próprio</li>
+            <li>O seu próprio servidor SMTP</li>
             <li>Design de formulário personalizado</li>
+            <li>Sem branding</li>
+            <li>Botão só para clientes da UE</li>
           </ul>
           <a href="https://apps.shopify.com/widerruf-app?locale=pt-PT" class="btn btn-primary" target="_blank" rel="noopener">Experimentar grátis 14 dias</a>
-        </div>
-      </div>
-      <div class="promo-banner" id="promoBanner" style="display:none;">
-        <div class="promo-banner-text">
-          <strong>50% off your first 3 months of Pro</strong>
-          <span>Enter this code when upgrading in the app. Valid until June 30, 2026.</span>
-        </div>
-        <div class="promo-code-box" onclick="navigator.clipboard.writeText('EASY50');this.querySelector('.copy-hint').textContent='Copied!';setTimeout(()=>this.querySelector('.copy-hint').textContent='Click to copy',2000)">
-          <code>EASY50</code>
-          <span class="copy-hint">Click to copy</span>
         </div>
       </div>
     </div>
@@ -1413,7 +1410,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Que línguas são suportadas?</button>
-          <div class="faq-a"><p>Alemão ou inglês no plano Free. Todas as 24 línguas oficiais da UE no plano Pro. O formulário e os e-mails de confirmação adaptam-se automaticamente à língua do cliente.</p></div>
+          <div class="faq-a"><p>Todas as 24 línguas oficiais da UE, também no plano Free. O formulário e os e-mails de confirmação adaptam-se automaticamente à língua do cliente. A interface da app está disponível em alemão, inglês, francês, italiano, espanhol e dinamarquês.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">A app é conforme ao RGPD?</button>
@@ -1421,11 +1418,11 @@
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Quanto custa a app?</button>
-          <div class="faq-a"><p>O plano Free é grátis para sempre. O plano Pro custa $12/mês ou $120/ano (17% de poupança) e oferece 24 línguas, templates personalizados, domínio próprio e Shopify Returns.</p></div>
+          <div class="faq-a"><p>O plano Free é grátis para sempre e inclui o formulário, os e-mails de confirmação nas 24 línguas da UE e o painel de controlo. O plano Pro custa $12/mês ou $120/ano (17% de poupança) e acrescenta, entre outras coisas, Shopify Returns automático, exclusão de produtos, um prazo de retratação próprio e um domínio de envio próprio.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Posso excluir certos produtos do direito de retratação?</button>
-          <div class="faq-a"><p>Sim. Com o plano Pro pode definir tags de produto, p. ex. "e-book" ou "sob medida". Produtos com essas tags são automaticamente ocultados no formulário de retratação. Também pode definir uma idade máxima do pedido.</p></div>
+          <div class="faq-a"><p>Sim. Com o plano Pro pode definir tags de produto, p. ex. "e-book" ou "sob medida". Produtos com essas tags são automaticamente ocultados no formulário de retratação. Também pode excluir coleções inteiras. O prazo de retratação no formulário conta a partir da entrega: 20 dias no plano Free, ajustável com Pro (a partir de 14 dias ou sem limite).</p></div>
         </div>
       </div>
     </div>
@@ -1485,15 +1482,6 @@
         langDrop.classList.remove('open');
       });
     }
-
-    // Promo banner: show only until 2026-06-30 (end of day UTC+2)
-    (function() {
-      var expiry = new Date('2026-07-01T00:00:00+02:00');
-      var banner = document.getElementById('promoBanner');
-      if (banner && new Date() < expiry) {
-        banner.style.display = '';
-      }
-    })();
   </script>
 </body>
 </html>
